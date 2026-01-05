@@ -23,7 +23,13 @@ module ExternalPosts
     end
 
     def fetch_from_rss(site, src)
-      xml = HTTParty.get(src['rss_url']).body
+      begin
+        response = HTTParty.get(src['rss_url'], timeout: 10)
+        xml = response.body
+      rescue StandardError => e
+        puts "Error fetching RSS feed from #{src['rss_url']} - #{e.message}"
+        return
+      end
       return if xml.nil?
       begin
         feed = Feedjira.parse(xml)

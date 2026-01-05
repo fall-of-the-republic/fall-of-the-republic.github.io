@@ -2,21 +2,17 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: Fall of the Republic Collection
+title: Fall of the Republic Collection # the website title (if blank, full name will be used instead)
+first_name:
 middle_name:
 last_name:
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+contact_note: 
+description:
+
+footer_text: 
+keywords:  # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🪙 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://fall-of-the-republic.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -49,9 +45,9 @@ repo_trophies:
 navbar_fixed: true
 footer_fixed: true
 search_enabled: true
-socials_in_search: true
-posts_in_search: true
-bib_search: true
+socials_in_search: false
+posts_in_search: false
+bib_search: false
 
 # Dimensions
 max_width: 930px
@@ -83,23 +79,23 @@ google_site_verification: # your google-site-verification ID (Google Search Cons
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
-# Blog
+# Blog (DISABLED for coin collection site)
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Coin Notes # blog_name will be displayed in your blog page
+blog_description: Collecting notes and research
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: false
 
 related_blog_posts:
-  enabled: true
+  enabled: false
   max_related: 5
 
-# Giscus comments (RECOMMENDED)
+# Giscus comments (DISABLED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
   repo: # <your-github-user-name>/<your-github-repo-name>
@@ -115,28 +111,17 @@ giscus:
   emit_metadata: 0
   lang: en
 
-# Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+# Disqus comments (DISABLED)
+disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
-# External sources.
+# External sources (DISABLED)
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-# Optional: Set default categories and tags for posts from each source.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
 
 # -----------------------------------------------------------------------------
-# Newsletter
+# Newsletter (DISABLED)
 # -----------------------------------------------------------------------------
 
 newsletter:
@@ -149,14 +134,9 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
-  books:
+  coins:
     output: true
-  news:
-    defaults:
-      layout: post
-    output: true
-  projects:
-    output: true
+    sort_by: date_minted
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -203,23 +183,23 @@ keep_files:
 
 # Plug-ins
 plugins:
-  - jekyll-archives-v2
+  # - jekyll-archives-v2  # Disabled - not using archives
   - jekyll-email-protect
-  - jekyll-feed
+  # - jekyll-feed  # Disabled - not using blog
   - jekyll-get-json
   - jekyll-imagemagick
-  - jekyll-jupyter-notebook
+  # - jekyll-jupyter-notebook  # Disabled - not using notebooks
   - jekyll-link-attributes
   - jekyll-minifier
-  - jekyll-paginate-v2
+  # - jekyll-paginate-v2  # Disabled - not using pagination
   - jekyll-regex-replace
-  - jekyll/scholar
+  # - jekyll/scholar  # Disabled - not using publications
   - jekyll-sitemap
-  - jekyll-tabs
+  # - jekyll-tabs  # Disabled - not using tabs
   - jekyll-terser
   - jekyll-toc
-  - jekyll-twitter-plugin
-  - jemoji
+  # - jekyll-twitter-plugin  # Disabled - not using twitter
+  # - jemoji  # Disabled - not using emoji
 
 # Sitemap settings
 defaults:
@@ -248,21 +228,14 @@ terser:
     drop_console: true
 
 # -----------------------------------------------------------------------------
-# Jekyll Archives
+# Jekyll Archives (DISABLED - Removed from plugins)
 # -----------------------------------------------------------------------------
 
-jekyll-archives:
-  posts:
-    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
-    permalinks:
-      year: "/blog/:year/"
-      tags: "/blog/:type/:name/"
-      categories: "/blog/:type/:name/"
-  books:
-    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+# jekyll-archives: Completely disabled
+#   enabled: []
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_tags: [] # Disabled for coin collection site
+display_categories: [] # Disabled for coin collection site
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -367,7 +340,7 @@ imagemagick:
     - ".tiff"
     - ".gif"
   output_formats:
-    webp: "-auto-orient -quality 85"
+    webp: "-quality 85"
 
 # Lazy loading images
 #   If you enable lazy loading, all images will add the loading="lazy" attribute.

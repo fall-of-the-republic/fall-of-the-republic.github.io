@@ -40,7 +40,7 @@ table.table a {
   color: var(--global-theme-color);
 
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-hover-color);
     text-decoration: underline;
   }
 
@@ -61,7 +61,7 @@ blockquote {
   border-left: 5px solid var(--global-theme-color);
   margin: 1.5em 0;
   padding: 1em;
-  font-size: 1.2rem;
+  font-size: 1rem;
 
   p {
     margin-bottom: 0;
@@ -190,6 +190,24 @@ ul.task-list input[type="checkbox"] {
 
 .citation,
 .citation-number {
+  color: var(--global-theme-color);
+}
+
+// Footnote hover tooltip
+.footnote-tooltip {
+  display: none;
+  z-index: 9999;
+  max-width: 360px;
+  padding: 0.75rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid var(--global-divider-color);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+.footnote-tooltip a {
   color: var(--global-theme-color);
 }
 
@@ -926,7 +944,6 @@ pre {
     border-radius: 0;
     margin-bottom: 0;
     padding: 0;
-    white-space: inherit;
   }
 }
 

@@ -1,0 +1,255 @@
+---
+layout: default
+---
+
+<div class="coin-page">
+  <header class="coin-header">
+    <h1 class="coin-title">{{ page.title }}</h1>
+    <div class="coin-metadata">
+      <span class="coin-period">{{ page.mint }}</span>
+      {% if page.date_minted %}
+        <span class="coin-date">{{ page.date_minted }}</span>
+      {% endif %}
+    </div>
+  </header>
+
+  <article class="coin-content">
+    <div class="coin-images">
+      {% if page.image_obverse %}
+        <div class="coin-image-main">
+          <img src="{{ page.image_obverse | prepend: '/assets/img/' | relative_url }}" alt="{{ page.title }} - Obverse" data-zoomable>
+          {% if page.obverse_description %}
+            <p class="image-label">Obverse: {{ page.obverse_description }}</p>
+          {% else %}
+            <p class="image-label">Obverse</p>
+          {% endif %}
+        </div>
+      {% endif %}
+      
+      {% if page.image_reverse %}
+        <div class="coin-image-reverse">
+          <img src="{{ page.image_reverse | prepend: '/assets/img/' | relative_url }}" alt="{{ page.title }} - Reverse" data-zoomable>
+          {% if page.reverse_description %}
+            <p class="image-label">Reverse: {{ page.reverse_description }}</p>
+          {% else %}
+            <p class="image-label">Reverse</p>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="coin-description">
+      {{ content }}
+    </div>
+
+    <div class="coin-details">
+      <h3>Details</h3>
+      <dl>
+        {% if page.ruler %}
+          <dt>Issuer:</dt>
+          <dd>{{ page.ruler }}</dd>
+        {% endif %}
+
+         {% if page.obverse_description %}
+          <dt>Obverse:</dt>
+          <dd>{{ page.obverse_description }}</dd>
+        {% endif %}
+        
+        {% if page.reverse_description %}
+          <dt>Reverse:</dt>
+          <dd>{{ page.reverse_description }}</dd>
+        {% endif %}
+        
+        {% if page.denomination %}
+          <dt>Denomination:</dt>
+          <dd>{{ page.denomination }}</dd>
+        {% endif %}
+        
+        {% if page.mint %}
+          <dt>Mint:</dt>
+          <dd>{{ page.mint }}</dd>
+        {% endif %}
+        
+        {% if page.metal %}
+          <dt>Metal:</dt>
+          <dd>{{ page.metal }}</dd>
+        {% endif %}
+        
+        {% if page.weight %}
+          <dt>Weight:</dt>
+          <dd>{{ page.weight }}</dd>
+        {% endif %}
+        
+        {% if page.diameter %}
+          <dt>Diameter:</dt>
+          <dd>{{ page.diameter }}</dd>
+        {% endif %}
+        
+        {% if page.grade %}
+          <dt>Grade:</dt>
+          <dd>{{ page.grade }}</dd>
+        {% endif %}
+        
+        {% if page.reference %}
+          <dt>Reference:</dt>
+          <dd>{{ page.reference }}</dd>
+        {% endif %}
+        
+       
+      </dl>
+    </div>
+
+    {% if page.tags and page.tags.size > 0 %}
+      <div class="coin-tags">
+        {% for tag in page.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </article>
+
+  <div class="coin-navigation">
+    <a href="{{ '/collection/' | relative_url }}" class="back-link">&larr; Back to Collection</a>
+  </div>
+</div>
+
+<style>
+.coin-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.coin-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.coin-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.coin-metadata {
+  color: var(--global-text-color-light);
+  font-size: 1.1rem;
+}
+
+.coin-metadata span {
+  margin: 0 0.5rem;
+}
+
+.coin-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 400px));
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.coin-image-main,
+.coin-image-reverse {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-items: start;
+}
+
+.coin-image-main img,
+.coin-image-reverse img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  align-self: start;
+}
+
+.image-label {
+  text-align: center;
+  font-style: italic;
+  color: var(--global-text-color-light);
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.coin-details {
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.coin-details h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.coin-details dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+  margin: 0;
+}
+
+.coin-details dt {
+  font-weight: 600;
+  color: var(--global-text-color);
+}
+
+.coin-details dd {
+  margin: 0;
+  color: var(--global-text-color-light);
+}
+
+.coin-description {
+  line-height: 1.8;
+  margin: 2rem 0;
+}
+
+.coin-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.coin-tags .tag {
+  background: var(--global-theme-color);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.coin-navigation {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.back-link {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .coin-images {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .coin-details dl {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+  
+  .coin-details dt {
+    margin-top: 0.5rem;
+  }
+}
+</style>

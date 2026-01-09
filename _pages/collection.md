@@ -149,8 +149,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Sort coins by sort_date numerically (oldest to newest)
   showcaseItems.sort((a, b) => {
-    const dateA = parseInt(a.dataset.sortDate);
-    const dateB = parseInt(b.dataset.sortDate);
+    const dateA = parseFloat(a.dataset.sortDate);
+    const dateB = parseFloat(b.dataset.sortDate);
     return dateA - dateB;
   });
   

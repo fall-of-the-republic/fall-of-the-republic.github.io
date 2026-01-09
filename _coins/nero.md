@@ -11,7 +11,7 @@ reference: '<a href="https://numismatics.org/ocre/id/ric.1(2).ner.72">RIC I<sup>
 metal: Silver
 weight: "3.11g"
 diameter:
-grade: "nVF"
+grade: "Near Very Fine"
 image_obverse: coins/nero/nero-obv.png
 image_reverse: coins/nero/nero-rev.png
 image_aligned: coins/nero/nero-aligned.png

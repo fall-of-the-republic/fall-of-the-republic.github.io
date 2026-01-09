@@ -31,6 +31,11 @@ ninja.data = [{
           description: "",
           section: "Coins",handler: () => {
               window.location.href = "/coins/p_licinius_nerva/";
+            },},{id: "coins-denarius-of-hadrian",
+          title: 'Denarius of Hadrian',
+          description: "",
+          section: "Coins",handler: () => {
+              window.location.href = "/coins/hadrian/";
             },},{id: "coins-denarius-of-tiberius",
           title: 'Denarius of Tiberius',
           description: "",

@@ -7,7 +7,7 @@ mint: Rome
 denomination: Denarius
 date_minted: "127* BCE"
 sort_date: -117
-reference: '<a href="http://numismatics.org/crro/id/rrc-253.1">Crawford 253/1</a>'
+reference: '<a href="http://numismatics.org/crro/id/rrc-253.1">Crawford 253/1</a>; BMCRR Rome 1133; RBW 1036'
 metal: Silver
 grade: "Very Fine"
 image_obverse: coins/l_opimius/l_opimius-obv.png

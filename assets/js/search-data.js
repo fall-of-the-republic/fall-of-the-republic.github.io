@@ -16,7 +16,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/collection/";
           },
-        },{id: "coins-denarius-of-l-saturnius",
+        },{id: "coins-denarius-of-q-servilius-caepio-and-l-calpurnius-piso",
+          title: 'Denarius of Q. Servilius Caepio and L. Calpurnius Piso',
+          description: "",
+          section: "Coins",handler: () => {
+              window.location.href = "/coins/capio_piso/";
+            },},{id: "coins-denarius-of-l-saturnius",
           title: 'Denarius of L. Saturnius',
           description: "",
           section: "Coins",handler: () => {
@@ -81,6 +86,11 @@ ninja.data = [{
           description: "",
           section: "Coins",handler: () => {
               window.location.href = "/coins/claudius/";
+            },},{id: "coins-denarius-of-t-carisius",
+          title: 'Denarius of T. Carisius',
+          description: "",
+          section: "Coins",handler: () => {
+              window.location.href = "/coins/t_carisius/";
             },},{id: "coins-denarius-of-gaius-pansa-and-decimus-brutus",
           title: 'Denarius of Gaius Pansa and Decimus Brutus',
           description: "",
@@ -101,6 +111,11 @@ ninja.data = [{
           description: "",
           section: "Coins",handler: () => {
               window.location.href = "/coins/faustus_sulla/";
+            },},{id: "coins-denarius-of-faustus-cornelius-sulla",
+          title: 'Denarius of Faustus Cornelius Sulla',
+          description: "",
+          section: "Coins",handler: () => {
+              window.location.href = "/coins/faustus_sulla_signet/";
             },},{id: "coins-denarius-of-l-cassius-longinus",
           title: 'Denarius of L. Cassius Longinus',
           description: "",

@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Faustus Cornelius Sulla"
 period: Republican
-ruler: Faustus Cornelius Sulla
+ruler: '<a href="https://romanrepublic.ac.uk/person/2300/">Faustus Cornelius Sulla</a>'
 mint: Rome
 denomination: Denarius
 date_minted: "56 BCE"

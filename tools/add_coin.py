@@ -22,6 +22,7 @@ import subprocess
 import sys
 from pathlib import Path
 from PIL import Image
+import yaml
 
 
 def extract_text_from_docx(docx_path):
@@ -484,30 +485,32 @@ def process_coin_folder(folder_path, bg_color, force=False):
         # Generate sort_date for chronological ordering
         sort_date = generate_sort_date(metadata.get('date_minted', ''))
         
-        # Build frontmatter with all fields
-        frontmatter = f"""---
-layout: coin
-title: "{metadata.get('title', 'Unknown Coin')}"
-period: {metadata.get('period', 'Imperial')}
-ruler: "{metadata.get('ruler', '')}"
-mint: "{metadata.get('mint', 'Rome')}"
-denomination: {denomination}
-date_minted: "{metadata.get('date_minted', '')}"
-sort_date: {sort_date}
-reference: "{metadata.get('reference', '')}"
-metal: {metal}
-weight: "{metadata.get('weight', '')}"
-diameter: "{metadata.get('diameter', '')}"
-grade: "{metadata.get('grade', '')}"
-image_obverse: coins/{filename}/{obv_dest.name}
-image_reverse: coins/{filename}/{rev_dest.name}
-image_aligned: coins/{filename}/{aligned_dest.name}
-obverse_description: "{metadata.get('obverse_description', '')}"
-reverse_description: "{metadata.get('reverse_description', '')}"
-featured: true
----
-
-"""
+        # Build frontmatter using proper YAML escaping
+        frontmatter_dict = {
+            'layout': 'coin',
+            'title': metadata.get('title', 'Unknown Coin'),
+            'period': metadata.get('period', 'Imperial'),
+            'ruler': metadata.get('ruler', ''),
+            'mint': metadata.get('mint', 'Rome'),
+            'denomination': denomination,
+            'date_minted': metadata.get('date_minted', ''),
+            'sort_date': sort_date,
+            'reference': metadata.get('reference', ''),
+            'metal': metal,
+            'weight': metadata.get('weight', ''),
+            'diameter': metadata.get('diameter', ''),
+            'grade': metadata.get('grade', ''),
+            'image_obverse': f"coins/{filename}/{obv_dest.name}",
+            'image_reverse': f"coins/{filename}/{rev_dest.name}",
+            'image_aligned': f"coins/{filename}/{aligned_dest.name}",
+            'obverse_description': metadata.get('obverse_description', ''),
+            'reverse_description': metadata.get('reverse_description', ''),
+            'featured': True
+        }
+        
+        # Use yaml.dump for proper formatting, then wrap with --- markers
+        yaml_content = yaml.dump(frontmatter_dict, default_flow_style=False, allow_unicode=True, sort_keys=False)
+        frontmatter = f"---\n{yaml_content}---\n"
         
         # Add content without section headers (keep simple)
         if content:
@@ -578,29 +581,34 @@ def process_legacy_mode(docx_path, obv_path, rev_path, bg_color):
     print("📝 Creating markdown file...")
     md_path = coins_dir / f"{filename}.md"
     
-    frontmatter = f"""---
-layout: coin
-title: "{metadata.get('title', 'Unknown Coin')}"
-period: {metadata.get('period', 'Imperial')}
-ruler: "{metadata.get('ruler', '')}"
-mint: {metadata.get('mint', 'Rome')}
-denomination: Denarius
-date_minted: "{metadata.get('date_minted', '')}"
-reference: "{metadata.get('reference', '')}"
-metal: Silver
-weight: "{metadata.get('weight', '')}"
-diameter: "{metadata.get('diameter', '')}"
-grade: "{metadata.get('grade', '')}"
-image_obverse: coins/{filename}/{obv_dest.name}
-image_reverse: coins/{filename}/{rev_dest.name}
-image_aligned: coins/{filename}/{aligned_dest.name}
-obverse_description: "{metadata.get('obverse_description', '')}"
-reverse_description: "{metadata.get('reverse_description', '')}"
-featured: true
----
-
-{content}
-"""
+    # Build frontmatter using proper YAML escaping
+    frontmatter_dict = {
+        'layout': 'coin',
+        'title': metadata.get('title', 'Unknown Coin'),
+        'period': metadata.get('period', 'Imperial'),
+        'ruler': metadata.get('ruler', ''),
+        'mint': metadata.get('mint', 'Rome'),
+        'denomination': 'Denarius',
+        'date_minted': metadata.get('date_minted', ''),
+        'reference': metadata.get('reference', ''),
+        'metal': 'Silver',
+        'weight': metadata.get('weight', ''),
+        'diameter': metadata.get('diameter', ''),
+        'grade': metadata.get('grade', ''),
+        'image_obverse': f"coins/{filename}/{obv_dest.name}",
+        'image_reverse': f"coins/{filename}/{rev_dest.name}",
+        'image_aligned': f"coins/{filename}/{aligned_dest.name}",
+        'obverse_description': metadata.get('obverse_description', ''),
+        'reverse_description': metadata.get('reverse_description', ''),
+        'featured': True
+    }
+    
+    # Use yaml.dump for proper formatting, then wrap with --- markers
+    yaml_content = yaml.dump(frontmatter_dict, default_flow_style=False, allow_unicode=True, sort_keys=False)
+    frontmatter = f"---\n{yaml_content}---\n"
+    
+    if content:
+        frontmatter += content.strip() + '\n'
     
     md_path.write_text(frontmatter)
     

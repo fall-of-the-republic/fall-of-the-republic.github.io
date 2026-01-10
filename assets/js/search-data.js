@@ -106,6 +106,11 @@ ninja.data = [{
           description: "",
           section: "Coins",handler: () => {
               window.location.href = "/coins/cassius_longinus_voting/";
+            },},{id: "coins-denarius-of-mn-aquillius",
+          title: 'Denarius of Mn. Aquillius',
+          description: "",
+          section: "Coins",handler: () => {
+              window.location.href = "/coins/mn_aquillius/";
             },},{id: "coins-denarius-of-lucius-aemilius-paullus",
           title: 'Denarius of Lucius Aemilius Paullus',
           description: "",

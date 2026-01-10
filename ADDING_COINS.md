@@ -1,99 +1,134 @@
 # Adding New Coins to the Collection
 
-## Quick Start
+## Quick Reference: Manual Workflow
 
-Use the automated script to add a new coin:
+For most cases, **manually add coins** using this streamlined process:
 
 ```bash
-python tools/add_coin.py \
-    "/path/to/Coins/Collection/CoinName/Notes.docx" \
-    "/path/to/Coins/Collection/CoinName/Photography/obverse.png" \
-    "/path/to/Coins/Collection/CoinName/Photography/reverse.png"
+# 1. Create directory
+mkdir -p assets/img/coins/coin-name
+
+# 2. Copy images with standardized naming
+cp "/path/to/obverse.png" "assets/img/coins/coin-name/coin-name-obverse.png"
+cp "/path/to/reverse.png" "assets/img/coins/coin-name/coin-name-reverse.png"
+
+# 3. Create aligned image for grid display
+python3 tools/align_coin_images.py \
+    assets/img/coins/coin-name/coin-name-obverse.png \
+    assets/img/coins/coin-name/coin-name-reverse.png \
+    assets/img/coins/coin-name/coin-name-aligned.png \
+    --bg-color black
+
+# 4. Create markdown file (see template below)
+nano _coins/coin_name.md
+
+# 5. Test and commit
+git add _coins/ assets/img/coins/
+git commit -m "Add [Coin Name] coin"
+git push
 ```
 
-## What the Script Does
+## Why Manual is Better
 
-1. **Extracts text** from your Notes.docx file
-2. **Parses metadata** (title, ruler, mint, date, reference, weight, grade, period)
-3. **Copies images** to `assets/img/coins/` with standardized naming
-4. **Creates aligned image** (side-by-side obverse/reverse on black background)
-5. **Generates markdown file** in `_coins/` with all metadata and content
+The `add_coin.py` script is available but manual addition is faster for our workflow because:
+- You control metadata accuracy without parsing text
+- Image naming is consistent (`coin-name-obverse.png`, `coin-name-reverse.png`)
+- Reference links are precisely formatted
+- You can add detailed descriptions directly
+- Works with any image format (JPEG, PNG)
 
 ## Manual Process (if needed)
 
 ### 1. Prepare Your Materials
 
-- **Notes.docx**: Coin description and metadata
-- **obverse.png**: Obverse (front) image
-- **reverse.png**: Reverse (back) image
+- **Obverse image**: Front of coin (PNG or JPEG, background removed preferred)
+- **Reverse image**: Back of coin (PNG or JPEG, background removed preferred)
+- **Metadata**: Title, ruler, mint, date, references, weight, diameter, grade
 
-### 2. Copy Images
+### 2. Create Directory & Copy Images
 
 ```bash
-cp "/path/to/obverse.png" "assets/img/coins/coin-name-obv.png"
-cp "/path/to/reverse.png" "assets/img/coins/coin-name-rev.png"
+mkdir -p assets/img/coins/coin-name
+cp "/source/path/obverse.png" "assets/img/coins/coin-name/coin-name-obverse.png"
+cp "/source/path/reverse.png" "assets/img/coins/coin-name/coin-name-reverse.png"
 ```
+
+**Image naming convention:** `coin-name-obverse.png`, `coin-name-reverse.png`
 
 ### 3. Create Aligned Image
 
 ```bash
-python tools/align_coin_images.py \
-    assets/img/coins/coin-name-obv.png \
-    assets/img/coins/coin-name-rev.png \
-    assets/img/coins/coin-name-aligned.png \
+python3 tools/align_coin_images.py \
+    assets/img/coins/coin-name/coin-name-obverse.png \
+    assets/img/coins/coin-name/coin-name-reverse.png \
+    assets/img/coins/coin-name/coin-name-aligned.png \
     --bg-color black
 ```
 
-### 4. Create Coin Entry
+This creates a side-by-side image used in the collection grid.
 
-Create `_coins/coin_name.md`:
+### 4. Create Coin Markdown Entry
 
-```yaml
+Create `_coins/coin_name.md` with this template:
+
 ---
 layout: coin
-title: "Coin Title Here"
-period: Republican           # Greek, Republican, or Imperial
-ruler: "Ruler Name"
+title: "Denarius of Julius Caesar"
+period: Imperatorial          # Greek, Republican, Imperatorial, or Imperial
+ruler: Julius Caesar
 mint: Rome
 denomination: Denarius
-date_minted: "110-109 BCE"
-reference: "Crawford 301/1"
+date_minted: "Jan/Feb 44 BCE"
+sort_date: -44               # Numeric year (negative for BC/BCE). Use decimals for coins in same year: 69.1, 69.2, 69.3
+reference: '<a href="http://numismatics.org/crro/id/rrc-480.5">Crawford 480/5b</a>'  # Link for Republican coins
 metal: Silver
-weight: "3.99g"
-grade: "gVF"
-image_obverse: coins/coin-name-obv.png
-image_reverse: coins/coin-name-rev.png
-image_aligned: coins/coin-name-aligned.png
-featured: true              # Shows in showcase and home page
+weight: "3.80g"
+diameter: "19mm"
+grade: "Fine"                # Numismatic grade (EF, gVF, VF, Fine, etc.)
+image_obverse: coins/coin_name/coin_name-obverse.png
+image_reverse: coins/coin_name/coin_name-reverse.png
+image_aligned: coins/coin_name/coin_name-aligned.png
+obverse_description: "Wreathed head of Caesar right; star behind; CAESAR IM[P]"
+reverse_description: "Venus standing left, holding Victory; P SEPVLLIVS behind"
+featured: true               # true = shows in collection grid
 ---
 
-Write your coin description here. This is the main content that appears on the coin's detail page.
+Historical description and context here. Write multiple paragraphs about the coin, its significance, historical context, and any interesting details.
 
-Add multiple paragraphs with historical context, significance, and interesting details about the coin.
+You can use markdown formatting like **bold** and *italic* for emphasis.
+
+## Critical Fields
+
+### Required
+- `layout`: Always `coin`
+- `title`: Descriptive title (e.g., "Denarius of Julius Caesar")
+- `period`: Must be one of: `Greek`, `Republican`, `Imperatorial`, `Imperial`
+- `sort_date`: Numeric value for chronological ordering
+  - **Negative** for BC/BCE (e.g., `-44` for 44 BC)
+  - **Positive** for AD/CE (e.g., `69` for 69 AD)
+  - **Decimals** for ordering coins within same year (e.g., `69.1`, `69.2`, `69.3`)
+
+### Image Paths (relative to `/assets/img/`)
+- `image_obverse`: `coins/coin-name/coin-name-obverse.png`
+- `image_reverse`: `coins/coin-name/coin-name-reverse.png`
+- `image_aligned`: `coins/coin-name/coin-name-aligned.png` (auto-generated)
+
+### Reference Links
+
+**For Republican & Imperatorial coins** (CRRO database link on Crawford number only):
+```yaml
+reference: '<a href="http://numismatics.org/crro/id/rrc-317.3">Crawford 317/3b</a>; BMCRR Rome 1548; RBW 1170'
 ```
 
-## Field Guidelines
+**For Imperial coins** (plain text, no links):
+```yaml
+reference: 'RIC I 189; BMCRE 6'
+```
 
-### Required Fields
-- `layout`: Always use `coin`
-- `title`: Full descriptive title
-- `period`: `Greek`, `Republican`, or `Imperial` (used for filtering)
-- `mint`: City where coin was minted
-- `featured`: Set to `true` to show in galleries
-
-### Image Fields
-- `image_obverse`: Obverse (front) image
-- `image_reverse`: Reverse (back) image  
-- `image_aligned`: Combined side-by-side image (created by script)
-
-### Metadata Fields
-- `ruler`: Ruler, moneyer, or issuing authority
-- `denomination`: Denarius, Aureus, Drachma, etc.
-- `date_minted`: Date range or specific date
-- `reference`: Crawford, RIC, or other catalog reference
-- `metal`: Gold, Silver, Bronze, etc.
-- `weight`: With unit (e.g., "3.99g")
-- `grade`: Numismatic grade (VF, EF, etc.)
+### Other Important Fields
+- `featured`: `true` to include in collection galleries
+- `grade`: Numismatic grade (EF = Extremely Fine, VF = Very Fine, Fine, etc.)
+- `obverse_description` & `reverse_description`: Brief text describing each side
 
 ## Notes Document Format
 
@@ -151,3 +186,31 @@ git add _coins/ assets/img/coins/
 git commit -m "Add Augustus Aureus coin"
 git push
 ```
+
+## Quick Reference: Common sort_date Values
+
+Use these for same-year coins (fractional sort_date):
+- **69 AD**: Galba (69.1), Otho (69.2), Vitellius (69.3)
+- **70 AD**: First coin (70.0), Second coin (70.1), etc.
+
+## Troubleshooting
+
+### Coins not appearing in collection
+- Verify `featured: true` is set
+- Check `period` matches exactly: `Greek`, `Republican`, `Imperatorial`, or `Imperial`
+- Ensure image paths are correct (no `/assets/img/` prefix, always start with `coins/`)
+
+### Sort order is wrong
+- Check `sort_date` is numeric (not a string)
+- Negative values for BC/BCE: `-101` not `101`
+- Use decimals to order multiple coins from same year: `69.1`, `69.2`, etc.
+
+### Images not displaying
+- Verify file exists at correct path
+- Image path should be: `coins/coin-name/coin-name-obverse.png`
+- Restart Jekyll or rebuild with `docker compose up`
+
+### Reference links not working
+- For Republican: `http://numismatics.org/crro/id/rrc-317.3` (URL-encoded, match the RRC number)
+- For Imperial: RIC references typically don't have URLs, use plain text
+- Always wrap in `<a href="...">text</a>` tags

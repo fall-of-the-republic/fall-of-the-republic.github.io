@@ -15,7 +15,7 @@ image_obverse: coins/neria/neria-obv.png
 image_reverse: coins/neria/neria-rev.png
 image_aligned: coins/neria/neria-aligned.png
 obverse_description: "Bearded head of Saturn right, harpa at shoulder; NERI Q VRB before"
-reverse_description: "Legionary eagle between two manipole standards on left hastati and on right principes; L LENT on left, C MARC on right, COS in lower field"
+reverse_description: "Legionary eagle between two manipole standards on left hastati and on right principes; L LENT on left, [C MARC] on right, COS in lower field"
 featured: true
 ---
 

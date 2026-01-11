@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Hadrian"
 period: Imperial
-ruler: Hadrian
+issuer: Hadrian
 mint: Rome
 denomination: Denarius
 date_minted: "133 - c. 135 CE"

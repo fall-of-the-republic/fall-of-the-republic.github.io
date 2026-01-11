@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Domitian"
 period: Imperial
-ruler: "Domitian"
+issuer: "Domitian"
 mint: Rome
 denomination: Denarius
 date_minted: "92/93 CE"

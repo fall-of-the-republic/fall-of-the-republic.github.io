@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Cn. Nerius"
 period: Imperatorial
-ruler: "Cn. Nerius"
+issuer: "Cn. Nerius"
 mint: "Rome"
 denomination: Denarius
 date_minted: "early January 49 BCE"

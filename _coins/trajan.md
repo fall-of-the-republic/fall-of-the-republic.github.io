@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Trajan"
 period: Imperial
-ruler: "Trajan"
+issuer: "Trajan"
 mint: Rome
 denomination: Denarius
 date_minted: "101/102 CE"

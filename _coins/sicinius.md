@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Q. Sicinius"
 period: Imperatorial
-ruler: Q. Sicinnius
+issuer: Q. Sicinnius
 mint: Rome
 denomination: Denarius
 date_minted: "49 BC"

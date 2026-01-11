@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Tiberius"
 period: Imperial
-ruler: "Tiberius"
+issuer: "Tiberius"
 mint: Rome
 denomination: Denarius
 date_minted: "14/37 CE"

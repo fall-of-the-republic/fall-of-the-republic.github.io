@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Titus"
 period: Imperial
-ruler: "Titus"
+issuer: "Titus"
 mint: Rome
 denomination: Denarius
 date_minted: "80 CE"

@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of L. Titurius L.f. Sabinus"
 period: Republican
-ruler: "L. Titurius L.f. Sabinus"
+issuer: "L. Titurius L.f. Sabinus"
 mint: Rome
 denomination: Denarius
 date_minted: "89 BCE"

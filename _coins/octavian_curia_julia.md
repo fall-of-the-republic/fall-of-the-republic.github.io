@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Octavian"
 period: Imperatorial
-ruler: "Octavian"
+issuer: "Octavian"
 mint: Rome
 denomination: Denarius
 date_minted: "30/29 BCE"

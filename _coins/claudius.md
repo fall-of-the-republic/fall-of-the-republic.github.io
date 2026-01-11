@@ -2,7 +2,7 @@
 layout: coin
 title: "As of Claudius"
 period: Imperial
-ruler: "Claudius"
+issuer: "Claudius"
 mint: Rome
 denomination: As
 date_minted: "41/50 AD"

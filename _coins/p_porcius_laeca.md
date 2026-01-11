@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of P. Porcius Laeca"
 period: Republican
-ruler: P. Porcius Laeca
+issuer: P. Porcius Laeca
 mint: Rome
 denomination: Denarius
 date_minted: "110-109 BCE"

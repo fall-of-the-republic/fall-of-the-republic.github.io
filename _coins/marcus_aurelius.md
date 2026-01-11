@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Marcus Aurelius"
 period: Imperial
-ruler: "Marcus Aurelius"
+issuer: "Marcus Aurelius"
 mint: Rome
 denomination: Denarius
 date_minted: "166 CE"

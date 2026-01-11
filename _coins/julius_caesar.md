@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Julius Caesar"
 period: Imperatorial
-ruler: "Julius Caesar"
+issuer: "Julius Caesar"
 mint: Rome
 denomination: Denarius
 date_minted: "Jan/Feb 44 BCE"

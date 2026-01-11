@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of M. Porcius Cato"
 period: Imperatorial
-ruler: M. Porcius Cato
+issuer: M. Porcius Cato
 mint: Utica
 denomination: Denarius
 date_minted: "Spring 47 - Spring 46 BCE"

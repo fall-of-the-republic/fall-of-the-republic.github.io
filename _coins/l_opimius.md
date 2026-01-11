@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of L. Opimius"
 period: Republican
-ruler: "L. Opimius"
+issuer: "L. Opimius"
 mint: Rome
 denomination: Denarius
 date_minted: "127* BCE"

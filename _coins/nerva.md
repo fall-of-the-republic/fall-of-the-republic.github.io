@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Nerva"
 period: Imperial
-ruler: "Nerva"
+issuer: "Nerva"
 mint: Rome
 denomination: Denarius
 date_minted: "96/98AD"

@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Nero"
 period: Imperial
-ruler: Nero
+issuer: Nero
 mint: Rome
 denomination: Denarius
 date_minted: "67 - 68 CE"

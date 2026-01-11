@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of L. Manlius Torquatus"
 period: Republican
-ruler: "L. Manlius Torquatus"
+issuer: "L. Manlius Torquatus"
 mint: Military mint traveling with Sulla
 denomination: Denarius
 date_minted: "82 BCE"

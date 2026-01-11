@@ -2,7 +2,7 @@
 layout: coin
 title: "Anonymous Denarius"
 period: Republican
-ruler: "Anonymous"
+issuer: "Anonymous"
 mint: Rome
 denomination: Denarius
 date_minted: "208 BCE / 189-180 BCE"

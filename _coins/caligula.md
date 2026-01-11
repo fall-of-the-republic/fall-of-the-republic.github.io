@@ -2,7 +2,7 @@
 layout: coin
 title: "As of Caligula"
 period: Imperial
-ruler: "Caligula"
+issuer: "Caligula"
 mint: Rome
 denomination: As
 date_minted: "39/40 AD"

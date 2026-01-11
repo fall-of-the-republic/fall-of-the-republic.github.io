@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Vespasian"
 period: Imperial
-ruler: "Vespasian"
+issuer: "Vespasian"
 mint: Rome
 denomination: Denarius
 date_minted: "74 CE"

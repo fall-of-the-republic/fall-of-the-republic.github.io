@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Galba"
 period: Imperial
-ruler: Galba
+issuer: Galba
 mint: Rome
 denomination: Denarius
 date_minted: "July 68 CE - January 69 CE"

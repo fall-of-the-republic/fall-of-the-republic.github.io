@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Gaius Pansa and Decimus Brutus "
 period: Republican
-ruler: Gaius Pansa and Decimus Brutus
+issuer: Gaius Pansa and Decimus Brutus
 mint: Rome
 denomination: Denarius
 date_minted: "48 BCE"

@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Mn. Aquillius"
 period: Republican
-ruler: Mn. Aquillius
+issuer: Mn. Aquillius
 mint: Rome
 denomination: Denarius Serratus
 date_minted: "61* BC"

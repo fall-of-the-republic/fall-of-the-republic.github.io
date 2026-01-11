@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of L. Saturnius"
 period: Republican
-ruler: L. Saturnius
+issuer: L. Saturnius
 mint: Rome
 denomination: Denarius
 date_minted: "101 BC"

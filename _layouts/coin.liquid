@@ -45,14 +45,19 @@ layout: default
     <div class="coin-details">
       <h3>Details</h3>
       <dl>
-        {% if page.ruler %}
+        {% if page.issuer %}
           <dt>Issuer:</dt>
-          <dd>{{ page.ruler }}</dd>
+          <dd>{{ page.issuer }}</dd>
         {% endif %}
 
         {% if page.date_minted %}
           <dt>Date Minted:</dt>
           <dd>{{ page.date_minted }}</dd>
+        {% endif %}
+
+        {% if page.mint %}
+          <dt>Mint:</dt>
+          <dd>{{ page.mint }}</dd>
         {% endif %}
 
          {% if page.obverse_description %}
@@ -70,10 +75,7 @@ layout: default
           <dd>{{ page.denomination }}</dd>
         {% endif %}
         
-        {% if page.mint %}
-          <dt>Mint:</dt>
-          <dd>{{ page.mint }}</dd>
-        {% endif %}
+        
         
         {% if page.metal %}
           <dt>Metal:</dt>

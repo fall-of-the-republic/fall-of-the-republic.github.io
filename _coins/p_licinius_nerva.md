@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of P. Licinius Nerva"
 period: Republican
-ruler: '<a href="https://romanrepublic.ac.uk/person/1760/">P. Licinius Nerva</a>'
+issuer: '<a href="https://romanrepublic.ac.uk/person/1760/">P. Licinius Nerva</a>'
 mint: Rome
 denomination: Denarius
 date_minted: "113 - 112 BCE"

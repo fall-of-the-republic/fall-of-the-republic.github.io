@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of L. Cassius Longinus"
 period: Republican
-ruler: "L. Cassius Longinus"
+issuer: "L. Cassius Longinus"
 mint: Rome
 denomination: Denarius
 date_minted: "60* BCE"

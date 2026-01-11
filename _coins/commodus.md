@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Commodus"
 period: Imperial
-ruler: "Commodus"
+issuer: "Commodus"
 mint: Rome
 denomination: Denarius
 date_minted: "180/181 CE"

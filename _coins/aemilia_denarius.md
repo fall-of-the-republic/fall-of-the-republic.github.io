@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Lucius Aemilius Paullus"
 period: Republican
-ruler: "Lucius Aemilius Paullus"
+issuer: "Lucius Aemilius Paullus"
 mint: Rome
 denomination: Denarius
 date_minted: "62 BCE"

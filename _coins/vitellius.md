@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Vitellius"
 period: Imperial
-ruler: Vitellius
+issuer: Vitellius
 mint: Rome
 denomination: Denarius
 date_minted: "Late April, 69 CE - December 20, 69 CE"

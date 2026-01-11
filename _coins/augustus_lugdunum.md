@@ -2,7 +2,7 @@
 layout: coin
 title: "Semis of Augustus"
 period: Imperial
-ruler: "Augustus"
+issuer: "Augustus"
 mint: Lugdunum
 denomination: Semis
 date_minted: "9/14 AD"

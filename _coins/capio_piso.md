@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Q. Servilius Caepio and L. Calpurnius Piso"
 period: Republican
-ruler: "Q. Servilius Caepio and L. Calpurnius Piso Caesoninus"
+issuer: "Q. Servilius Caepio and L. Calpurnius Piso Caesoninus"
 mint: Rome
 denomination: Denarius
 date_minted: "100 BC"

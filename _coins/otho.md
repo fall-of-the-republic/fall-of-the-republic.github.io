@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of Otho"
 period: Imperial
-ruler: Otho
+issuer: Otho
 mint: Rome
 denomination: Denarius
 date_minted: "January 15, 69 CE – March 8,  69 CE"

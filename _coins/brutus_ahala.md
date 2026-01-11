@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of M. Junius Brutus"
 period: Republican
-ruler: '<a href="https://romanrepublic.ac.uk/person/2459">Marcus Junius Brutus</a>'
+issuer: '<a href="https://romanrepublic.ac.uk/person/2459">Marcus Junius Brutus</a>'
 mint: Rome
 denomination: Denarius
 date_minted: "54 BCE"

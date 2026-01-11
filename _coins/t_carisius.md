@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of T. Carisius"
 period: Imperatorial
-ruler: T. Carisius
+issuer: T. Carisius
 mint: Rome
 denomination: Denarius
 date_minted: "46 BC"

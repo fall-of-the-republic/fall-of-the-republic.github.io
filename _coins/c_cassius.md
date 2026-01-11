@@ -2,7 +2,7 @@
 layout: coin
 title: "Denarius of C. Cassius"
 period: Republican
-ruler: "C. Cassius"
+issuer: "C. Cassius"
 mint: Rome
 denomination: Denarius
 date_minted: "126 BCE"

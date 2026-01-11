@@ -24,9 +24,9 @@ nav_order: 2
     <div class="showcase-item" data-sort-date="{{ coin.sort_date }}" data-period="{{ coin.period | downcase }}">
       <a href="{{ coin.url | relative_url }}">
         {% if coin.image_aligned %}
-          <img src="{{ coin.image_aligned | prepend: '/assets/img/' | relative_url }}" alt="{{ coin.title }}">
+          <img src="{{ coin.image_aligned | prepend: '/assets/img/' | relative_url }}" alt="{{ coin.title }}" width="700" height="350" loading="lazy">
         {% elsif coin.image_obverse %}
-          <img src="{{ coin.image_obverse | prepend: '/assets/img/' | relative_url }}" alt="{{ coin.title }}">
+          <img src="{{ coin.image_obverse | prepend: '/assets/img/' | relative_url }}" alt="{{ coin.title }}" width="400" height="400" loading="lazy">
         {% endif %}
         <div class="showcase-overlay">
           <h3>{{ coin.title }}</h3>
@@ -102,6 +102,7 @@ nav_order: 2
   height: 100%;
   object-fit: contain;
   display: block;
+  content-visibility: auto;
 }
 
 .showcase-overlay {

@@ -28,9 +28,9 @@ Below are some well-documented coins within the collection. All coins are availa
     <div class="showcase-item" data-sort-date="{{ coin.sort_date }}">
       <a href="{{ coin.url | relative_url }}">
         {% if coin.image_aligned %}
-          <img src="{{ coin.image_aligned | prepend: '/assets/img/' | relative_url }}" alt="{{ coin.title }}">
+          <img src="{{ coin.image_aligned | prepend: '/assets/img/' | relative_url }}" alt="{{ coin.title }}" width="700" height="350" loading="lazy">
         {% elsif coin.image_obverse %}
-          <img src="{{ coin.image_obverse | prepend: '/assets/img/' | relative_url }}" alt="{{ coin.title }}">
+          <img src="{{ coin.image_obverse | prepend: '/assets/img/' | relative_url }}" alt="{{ coin.title }}" width="400" height="400" loading="lazy">
         {% endif %}
         <div class="showcase-overlay">
           <h3>{{ coin.title }}</h3>
@@ -72,6 +72,7 @@ Below are some well-documented coins within the collection. All coins are availa
   height: auto;
   object-fit: contain;
   display: block;
+  content-visibility: auto;
 }
 
 .showcase-overlay {

@@ -28,9 +28,25 @@ Below are some well-documented coins within the collection. All coins are availa
     <div class="showcase-item" data-sort-date="{{ coin.sort_date }}">
       <a href="{{ coin.url | relative_url }}">
         {% if coin.image_aligned %}
-          <img src="{{ coin.image_aligned | prepend: '/assets/img/' | relative_url }}" alt="{{ coin.title }}" width="700" height="350" loading="lazy">
+          {% assign img_path = coin.image_aligned | remove: '.png' | remove: '.jpg' %}
+          <picture>
+            <source
+              srcset="{% for i in site.imagemagick.widths %}{{ img_path | prepend: '/assets/img/' | relative_url }}-{{ i }}.webp {{ i }}w,{% endfor %}"
+              type="image/webp"
+              sizes="700px"
+            >
+            <img src="{{ coin.image_aligned | prepend: '/assets/img/' | relative_url }}" alt="{{ coin.title }}" width="700" height="350" loading="lazy">
+          </picture>
         {% elsif coin.image_obverse %}
-          <img src="{{ coin.image_obverse | prepend: '/assets/img/' | relative_url }}" alt="{{ coin.title }}" width="400" height="400" loading="lazy">
+          {% assign img_path = coin.image_obverse | remove: '.png' | remove: '.jpg' %}
+          <picture>
+            <source
+              srcset="{% for i in site.imagemagick.widths %}{{ img_path | prepend: '/assets/img/' | relative_url }}-{{ i }}.webp {{ i }}w,{% endfor %}"
+              type="image/webp"
+              sizes="400px"
+            >
+            <img src="{{ coin.image_obverse | prepend: '/assets/img/' | relative_url }}" alt="{{ coin.title }}" width="400" height="400" loading="lazy">
+          </picture>
         {% endif %}
         <div class="showcase-overlay">
           <h3>{{ coin.title }}</h3>

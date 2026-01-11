@@ -50,6 +50,11 @@ layout: default
           <dd>{{ page.ruler }}</dd>
         {% endif %}
 
+        {% if page.date_minted %}
+          <dt>Date Minted:</dt>
+          <dd>{{ page.date_minted }}</dd>
+        {% endif %}
+
          {% if page.obverse_description %}
           <dt>Obverse:</dt>
           <dd>{{ page.obverse_description }}</dd>

@@ -17,7 +17,9 @@ layout: default
     <div class="coin-images">
       {% if page.image_obverse %}
         <div class="coin-image-main">
-          <img src="{{ page.image_obverse | prepend: '/assets/img/' | relative_url }}" alt="{{ page.title }} - Obverse" data-zoomable>
+          {% assign obv_alt = page.title | append: " - Obverse" %}
+          {% assign obv_path = "assets/img/" | append: page.image_obverse %}
+          {% include figure.liquid path=obv_path alt=obv_alt zoomable=true %}
           {% if page.obverse_description %}
             <p class="image-label">Obverse: {{ page.obverse_description }}</p>
           {% else %}
@@ -28,7 +30,9 @@ layout: default
       
       {% if page.image_reverse %}
         <div class="coin-image-reverse">
-          <img src="{{ page.image_reverse | prepend: '/assets/img/' | relative_url }}" alt="{{ page.title }} - Reverse" data-zoomable>
+          {% assign rev_alt = page.title | append: " - Reverse" %}
+          {% assign rev_path = "assets/img/" | append: page.image_reverse %}
+          {% include figure.liquid path=rev_path alt=rev_alt zoomable=true %}
           {% if page.reverse_description %}
             <p class="image-label">Reverse: {{ page.reverse_description }}</p>
           {% else %}

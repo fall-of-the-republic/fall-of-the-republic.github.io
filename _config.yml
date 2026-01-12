@@ -137,6 +137,9 @@ collections:
   coins:
     output: true
     sort_by: date_minted
+  books:
+    output: true
+    sort_by: started
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -183,7 +186,7 @@ keep_files:
 
 # Plug-ins
 plugins:
-  # - jekyll-archives-v2  # Disabled - not using archives
+  # - jekyll-archives-v2  # Disabled - requires complex config for books
   - jekyll-email-protect
   # - jekyll-feed  # Disabled - not using blog
   - jekyll-get-json
@@ -228,11 +231,10 @@ terser:
     drop_console: true
 
 # -----------------------------------------------------------------------------
-# Jekyll Archives (DISABLED - Removed from plugins)
+# Jekyll Archives
 # -----------------------------------------------------------------------------
 
-# jekyll-archives: Completely disabled
-#   enabled: []
+# jekyll-archives: Disabled - not needed for simple bookshelf
 
 display_tags: [] # Disabled for coin collection site
 display_categories: [] # Disabled for coin collection site

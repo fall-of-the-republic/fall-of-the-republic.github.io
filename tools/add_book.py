@@ -263,6 +263,14 @@ author: {book_data['author']}"""
         if download_cover_image(book_data['cover_url'], cover_path):
             frontmatter += f"\ncover: assets/img/book_covers/{cover_filename}"
             print(f"✓ Cover image saved")
+        else:
+            # Use default cover if download fails
+            frontmatter += f"\ncover: assets/img/book_covers/default_cover.jpg"
+            print(f"✓ Using default cover (download failed)")
+    else:
+        # No cover URL available, use default cover
+        frontmatter += f"\ncover: assets/img/book_covers/default_cover.jpg"
+        print(f"✓ Using default cover (no cover URL found)")
     
     frontmatter += f"""
 categories: 

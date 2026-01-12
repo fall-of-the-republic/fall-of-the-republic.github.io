@@ -23,7 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-the-landmark-julius-caesar-the-complete-works",
+        },{id: "books-historia-numorum-italy",
+          title: 'Historia numorum--Italy',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/author_historia_numorum_italy/";
+            },},{id: "books-the-landmark-julius-caesar-the-complete-works",
           title: 'The Landmark Julius Caesar : The Complete Works',
           description: "",
           section: "Books",handler: () => {
@@ -59,7 +64,7 @@ ninja.data = [{
           section: "Books",handler: () => {
               window.location.href = "/books/burnett_the_roman_provinces_300_bce_3/";
             },},{id: "books-roman-republican-coinage",
-          title: 'Roman Republican coinage',
+          title: 'Roman Republican Coinage',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/crawford_roman_republican_coinage/";
@@ -83,6 +88,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/gomez_encyclopedia_roman_empire/";
+            },},{id: "books-moneta-a-brief-history-of-ancient-rome-in-twelve-coins",
+          title: 'Moneta: A Brief History of Ancient Rome in Twelve Coins',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/harney_moneta/";
             },},{id: "books-guide-to-biblical-coins",
           title: 'Guide to Biblical coins',
           description: "",
@@ -93,6 +103,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/kallet_athenian_empire/";
+            },},{id: "books-archaic-and-classical-greek-coins",
+          title: 'Archaic and classical Greek coins',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/kraay_archaic_and_classical_greek_co/";
             },},{id: "books-unruly",
           title: 'Unruly',
           description: "",
@@ -153,6 +168,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/sutherland_roman_imperial_coinage/";
+            },},{id: "books-the-roman-revolution",
+          title: 'The Roman revolution',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/syme_the_roman_revolution/";
             },},{id: "books-hellenistic-world-using-coins-as-sources",
           title: 'Hellenistic World: : Using Coins as Sources',
           description: "",

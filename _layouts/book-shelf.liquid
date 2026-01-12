@@ -11,7 +11,7 @@ layout: page
         <div class="book-card">
           <div class="book-cover">
             {% if item.cover %}
-              <img alt="{{ item.title }} cover" src="{{ item.cover | prepend: page.covers | relative_url }}" loading="lazy">
+              {% include figure.liquid path=item.cover alt=item.title loading="lazy" %}
             {% elsif item.olid %}
               <img alt="{{ item.title }} cover" src="http://covers.openlibrary.org/b/olid/{{ item.olid }}-L.jpg?default=false" loading="lazy">
             {% elsif item.isbn %}
@@ -58,10 +58,24 @@ layout: page
   margin-bottom: 1rem;
 }
 
+.book-cover figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.book-cover picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .book-cover img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .book-status {

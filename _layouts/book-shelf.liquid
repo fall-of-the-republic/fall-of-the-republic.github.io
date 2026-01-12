@@ -9,40 +9,19 @@ layout: page
     {% if collection and collection.size > 0 %}
       {% for item in collection %}
         <div class="book-card">
-          <a href="{{ item.url | relative_url }}">
-            <div class="book-cover">
-              {% if item.cover %}
-                <img alt="{{ item.title }} cover" src="{{ item.cover | prepend: page.covers | relative_url }}" loading="lazy">
-              {% elsif item.olid %}
-                <img alt="{{ item.title }} cover" src="http://covers.openlibrary.org/b/olid/{{ item.olid }}-L.jpg?default=false" loading="lazy">
-              {% elsif item.isbn %}
-                <img alt="{{ item.title }} cover" src="http://covers.openlibrary.org/b/isbn/{{ item.isbn }}-L.jpg?default=false" loading="lazy">
-              {% endif %}
-              {% if item.status %}
-                {% assign statuses = 'abandoned,finished,interested,paused,queued,reading,reread' | split: ',' %}
-                {% assign status = item.status | downcase | strip %}
-                {% if statuses contains status %}
-                  <div class="book-status {{ status | downcase }}">{{ status | upcase }}</div>
-                {% else %}
-                  <div class="book-status uncategorized">UNCATEGORIZED</div>
-                {% endif %}
-              {% else %}
-                <div class="book-status uncategorized">UNCATEGORIZED</div>
-              {% endif %}
-            </div>
-            <div class="book-info">
-              <h3>{{ item.title }}</h3>
-              <p class="book-author">{{ item.author }}</p>
-              {% if item.stars %}
-                <p class="book-rating">
-                  {% assign full_stars = item.stars | floor %}
-                  {% assign half_star = item.stars | minus: full_stars %}
-                  {% for i in (1..full_stars) %}<i class="fa-solid fa-star"></i>{% endfor %}
-                  {% if half_star > 0 %}<i class="fa-solid fa-star-half-stroke"></i>{% endif %}
-                </p>
-              {% endif %}
-            </div>
-          </a>
+          <div class="book-cover">
+            {% if item.cover %}
+              <img alt="{{ item.title }} cover" src="{{ item.cover | prepend: page.covers | relative_url }}" loading="lazy">
+            {% elsif item.olid %}
+              <img alt="{{ item.title }} cover" src="http://covers.openlibrary.org/b/olid/{{ item.olid }}-L.jpg?default=false" loading="lazy">
+            {% elsif item.isbn %}
+              <img alt="{{ item.title }} cover" src="http://covers.openlibrary.org/b/isbn/{{ item.isbn }}-L.jpg?default=false" loading="lazy">
+            {% endif %}
+          </div>
+          <div class="book-info">
+            <h3>{{ item.title }}</h3>
+            <p class="book-author">{{ item.author }}</p>
+          </div>
         </div>
       {% endfor %}
     {% endif %}
@@ -59,16 +38,6 @@ layout: page
 
 .book-card {
   position: relative;
-  transition: transform 0.3s ease;
-}
-
-.book-card:hover {
-  transform: translateY(-5px);
-}
-
-.book-card a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .book-cover {

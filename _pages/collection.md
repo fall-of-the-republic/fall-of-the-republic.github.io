@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Filter coins
       showcaseItems.forEach(item => {
         if (filter === 'all' || item.dataset.period === filter) {
-          item.style.display = 'block';
+          item.style.display = 'flex';
         } else {
           item.style.display = 'none';
         }

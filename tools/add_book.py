@@ -17,11 +17,116 @@ import urllib.parse
 import ssl
 from pathlib import Path
 from datetime import datetime
+from html.parser import HTMLParser
 
 # Create SSL context that doesn't verify certificates (for local testing)
 ssl_context = ssl.create_default_context()
 ssl_context.check_hostname = False
 ssl_context.verify_mode = ssl.CERT_NONE
+
+
+class ISBNSearchParser(HTMLParser):
+    """Parse isbnsearch.org HTML to extract book metadata."""
+    def __init__(self):
+        super().__init__()
+        self.data = {}
+        self.current_tag = None
+        self.in_title = False
+        self.in_author = False
+        self.in_publisher = False
+        self.in_year = False
+        
+    def handle_starttag(self, tag, attrs):
+        attrs_dict = dict(attrs)
+        if tag == 'h1' and attrs_dict.get('class') == 'book-title':
+            self.in_title = True
+        elif tag == 'div' and attrs_dict.get('class') == 'book-author':
+            self.in_author = True
+        elif tag == 'span' and 'year' in attrs_dict.get('class', ''):
+            self.in_year = True
+            
+    def handle_data(self, data):
+        data = data.strip()
+        if data:
+            if self.in_title:
+                self.data['title'] = data
+            elif self.in_author:
+                if 'by ' in data.lower():
+                    self.data['author'] = data.replace('by ', '').replace('By ', '')
+                elif 'author' not in self.data:
+                    self.data['author'] = data
+            elif self.in_year and data.isdigit():
+                self.data['year'] = data
+                
+    def handle_endtag(self, tag):
+        if tag in ['h1', 'div', 'span']:
+            self.in_title = False
+            self.in_author = False
+            self.in_year = False
+
+
+def fetch_isbnsearch(isbn):
+    """Fetch book data from isbnsearch.org as fallback."""
+    isbn = re.sub(r'[^\d]', '', isbn)
+    url = f"https://isbnsearch.org/isbn/{isbn}"
+    
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req, timeout=10, context=ssl_context) as response:
+            html = response.read().decode('utf-8')
+        
+        # Extract title
+        title = 'Unknown Title'
+        title_match = re.search(r'<h1[^>]*>([^<]+)</h1>', html)
+        if title_match:
+            title = title_match.group(1).strip()
+        
+        # Extract author
+        author = 'Unknown Author'
+        author_match = re.search(r'<strong>Author[s]?:</strong>\s*([^<]+)', html, re.IGNORECASE)
+        if author_match:
+            author = author_match.group(1).strip()
+        
+        # Extract year
+        year = ''
+        year_match = re.search(r'<strong>Published:</strong>\s*([^<]+)', html, re.IGNORECASE)
+        if year_match:
+            year_text = year_match.group(1).strip()
+            year_num = re.search(r'\d{4}', year_text)
+            if year_num:
+                year = year_num.group(0)
+        
+        # Try to extract cover image URL
+        cover_url = None
+        # Look for isbndb.com cover URLs
+        cover_match = re.search(r'(https?://[^"\']*isbndb\.com[^"\']*covers[^"\']*\.jpg)', html, re.IGNORECASE)
+        if not cover_match:
+            # Look for img tags with cover-related attributes
+            cover_match = re.search(r'<img[^>]+src="([^"]*book[^"]*cover[^"]*)"', html, re.IGNORECASE)
+        if not cover_match:
+            cover_match = re.search(r'<img[^>]+class="[^"]*cover[^"]*"[^>]+src="([^"]+)"', html, re.IGNORECASE)
+        if not cover_match:
+            # Look for any img src with cover in the URL
+            cover_match = re.search(r'<img[^>]+src="([^"]*cover[^"]*\.jpg)"', html, re.IGNORECASE)
+        if cover_match:
+            cover_url = cover_match.group(1)
+            if not cover_url.startswith('http'):
+                cover_url = 'https://isbnsearch.org' + cover_url
+        
+        if title != 'Unknown Title' or author != 'Unknown Author':
+            return {
+                'title': title,
+                'author': author,
+                'isbn': isbn,
+                'publish_year': year,
+                'cover_url': cover_url,
+                'olid': None
+            }
+        
+        return None
+    except Exception as e:
+        print(f"Error fetching from ISBNSearch: {e}")
+        return None
 
 
 def slugify(text):
@@ -104,7 +209,23 @@ def fetch_openlibrary_by_oclc(oclc):
         return None
 
 
-def create_book_markdown(book_data, books_dir):
+def download_cover_image(url, filename):
+    """Download cover image from URL."""
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req, timeout=10, context=ssl_context) as response:
+            image_data = response.read()
+        
+        with open(filename, 'wb') as f:
+            f.write(image_data)
+        
+        return True
+    except Exception as e:
+        print(f"Error downloading cover image: {e}")
+        return False
+
+
+def create_book_markdown(book_data, books_dir, assets_dir):
     """Create a markdown file for the book."""
     # Generate filename
     author_slug = slugify(book_data['author'].split()[-1])  # Last name
@@ -133,6 +254,15 @@ author: {book_data['author']}"""
         frontmatter += f"\nisbn: {book_data['isbn']}"
     elif book_data.get('olid'):
         frontmatter += f"\nolid: {book_data['olid']}"
+    
+    # Handle cover image download if URL provided
+    if book_data.get('cover_url'):
+        cover_filename = f"{author_slug}_{title_slug}_cover.jpg"
+        cover_path = assets_dir / cover_filename
+        print(f"Downloading cover image...")
+        if download_cover_image(book_data['cover_url'], cover_path):
+            frontmatter += f"\ncover: assets/img/book_covers/{cover_filename}"
+            print(f"✓ Cover image saved")
     
     frontmatter += f"""
 categories: 
@@ -172,6 +302,22 @@ def main():
     else:
         print(f"Fetching book data for ISBN: {identifier}...")
         book_data = fetch_openlibrary_by_isbn(identifier)
+        
+        # If Open Library fails or returns incomplete data, try ISBNSearch
+        if not book_data or book_data.get('author') == 'Unknown Author':
+            print("Trying ISBNSearch.org as fallback...")
+            isbn_data = fetch_isbnsearch(identifier)
+            if isbn_data:
+                # Merge data, preferring ISBNSearch for missing fields
+                if not book_data:
+                    book_data = isbn_data
+                else:
+                    if book_data.get('author') == 'Unknown Author' and isbn_data.get('author'):
+                        book_data['author'] = isbn_data['author']
+                    if not book_data.get('publish_year') and isbn_data.get('publish_year'):
+                        book_data['publish_year'] = isbn_data['publish_year']
+                    if isbn_data.get('cover_url'):
+                        book_data['cover_url'] = isbn_data['cover_url']
     
     if not book_data:
         print("Could not fetch book data. Please check the identifier.")
@@ -198,13 +344,18 @@ def main():
     script_dir = Path(__file__).parent
     repo_dir = script_dir.parent
     books_dir = repo_dir / '_books'
+    assets_dir = repo_dir / 'assets' / 'img' / 'book_covers'
     
     if not books_dir.exists():
         print(f"Creating _books directory at {books_dir}")
         books_dir.mkdir(parents=True)
     
+    if not assets_dir.exists():
+        print(f"Creating book_covers directory at {assets_dir}")
+        assets_dir.mkdir(parents=True)
+    
     # Create markdown file
-    filepath = create_book_markdown(book_data, books_dir)
+    filepath = create_book_markdown(book_data, books_dir, assets_dir)
     
     if filepath:
         print(f"\n✓ Created: {filepath.relative_to(repo_dir)}")

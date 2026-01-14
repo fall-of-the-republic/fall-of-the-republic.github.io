@@ -1,6 +1,6 @@
 ---
 layout: book-review
-title: "The Roman revolution"
+title: "The Roman Revolution"
 author: Ronald Syme
 isbn: 9780198810018
 cover: assets/img/book_covers/default_cover.jpg

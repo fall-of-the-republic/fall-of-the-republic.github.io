@@ -174,7 +174,7 @@ ninja.data = [{
           section: "Books",handler: () => {
               window.location.href = "/books/sutherland_roman_imperial_coinage/";
             },},{id: "books-the-roman-revolution",
-          title: 'The Roman revolution',
+          title: 'The Roman Revolution',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/syme_the_roman_revolution/";

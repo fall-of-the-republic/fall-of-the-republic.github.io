@@ -14,7 +14,7 @@ latest_posts:
   enabled: false
 ---
 ## Introduction and Welcome
-This collection and blog are an extension of prior work posting coins on Instagram. Often, when composing those posts, I found that significant historical and numismatic information cannot be included within the 2,000-character limit. Here, we have no such limits and can explore the deep connections between ancient Roman coins, primary sources, and modern scholarship.
+This collection and blog are an extension of prior work posting coins on [Instagram](https://www.instagram.com/jasonsancientcoins/). Often, when composing those posts, I found that significant historical and numismatic information cannot be included within the 2,000-character limit. Here, we have no such limits and can explore the deep connections between ancient Roman coins, primary sources, and modern scholarship.
 
 This collection was originally inspired by Suetonius' Twelve Caesars, and completing that set of coins was the first goal. Over time, we have focused on the late Republic as it offers an expressive numismatic template that revels in its ancestral history, engages with the challenges of its day, and provides intriguing scholarship and narrative for today. The parameters of the forthcoming collection will be tentatively from the Gracchi (~133 BCE) to Caesar (~49 BCE); however, already completed sets and other coins of interest will be included.
 

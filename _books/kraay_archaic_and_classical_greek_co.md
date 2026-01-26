@@ -9,5 +9,3 @@ tags:
 date: 2026-01-11
 released: 1976
 ---
-
-A book by Colin M. Kraay.

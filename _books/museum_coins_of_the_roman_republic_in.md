@@ -9,5 +9,3 @@ tags:
 date: 2026-01-11
 released: 1970
 ---
-
-A book by British Museum.

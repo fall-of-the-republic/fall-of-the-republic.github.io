@@ -9,5 +9,3 @@ tags:
 date: 2026-01-11
 released: 2024
 ---
-
-A book by Harlan J. Berk.

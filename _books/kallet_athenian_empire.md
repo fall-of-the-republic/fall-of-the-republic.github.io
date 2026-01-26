@@ -9,5 +9,3 @@ tags:
 date: 2026-01-11
 released: 2020
 ---
-
-A book by Lisa Kallet.

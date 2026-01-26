@@ -9,5 +9,3 @@ tags:
 date: 2026-01-11
 released: 2025
 ---
-
-A book by Gareth Harney.

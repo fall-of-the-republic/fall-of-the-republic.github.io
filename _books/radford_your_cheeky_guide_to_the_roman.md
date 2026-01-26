@@ -9,5 +9,3 @@ tags:
 date: 2026-01-11
 released: 2024-11-05
 ---
-
-A book by Peta Greenfield,Fiona Radford.

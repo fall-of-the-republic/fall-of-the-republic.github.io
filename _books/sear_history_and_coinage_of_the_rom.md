@@ -9,5 +9,3 @@ tags:
 date: 2026-01-11
 released: 1998
 ---
-
-A book by David R. Sear.

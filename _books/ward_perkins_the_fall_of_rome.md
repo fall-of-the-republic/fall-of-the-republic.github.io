@@ -8,5 +8,3 @@ tags:
 date: 2026-01-11
 released: 2006
 ---
-
-A book by Bryan Ward-Perkins.

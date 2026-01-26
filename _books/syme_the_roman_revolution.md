@@ -9,5 +9,3 @@ tags:
 date: 2026-01-11
 released: 1960
 ---
-
-A book by Ronald Syme.

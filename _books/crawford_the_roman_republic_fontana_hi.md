@@ -9,5 +9,3 @@ tags:
 date: 2026-01-11
 released: 1992
 ---
-
-A book by Michael Crawford.

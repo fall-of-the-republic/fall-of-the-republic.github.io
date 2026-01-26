@@ -8,5 +8,3 @@ tags:
 date: 2026-01-11
 released: 2021
 ---
-
-A book by Garrett Ryan.

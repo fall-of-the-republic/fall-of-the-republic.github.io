@@ -9,5 +9,3 @@ tags:
 date: 2026-01-11
 released: 2013
 ---
-
-A book by Roberto Russo; Alberto De Falco; David L. Vagi.

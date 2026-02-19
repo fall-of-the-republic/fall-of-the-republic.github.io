@@ -6,7 +6,7 @@ issuer: T. Carisius
 mint: Rome
 denomination: Denarius
 date_minted: "46 BC"
-reference: '<a href="https://numismatics.org/crro/id/rrc-464.2">RRC 464/2</a>'
+reference: '<a href="https://numismatics.org/crro/id/rrc-464.2">RRC 464/2</a>; BMCRR Rome 4056; RBW 1614'
 metal: Silver
 weight: ""
 diameter: ""

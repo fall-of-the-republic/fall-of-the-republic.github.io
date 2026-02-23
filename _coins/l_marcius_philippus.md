@@ -17,7 +17,7 @@ image_reverse: coins/l_marcius_philippus/l_marcius_philippus-rev.png
 image_aligned: coins/l_marcius_philippus/l_marcius_philippus-aligned.png
 obverse_description: "Diademed head of Ancus Marcius, right; behind lituus and below ANCVS"
 reverse_description: "Equestrian statue, standing on top of an aqueduct; at horse's feet, flower. Below, AQVA MAR within the arches of the aqueduct; Border of dots."
-featured: true
+featured: false
 ---
 
 The obverse shows the head of Ancus Marcius, the mythical fourth king of Rome, and reportedly the first to bring water to the city via an aqueduct. The reverse continues this theme showing the Aqua Marcia built by the praetor Q. Marcia Rex between 144-140 BCE. For this feat, and repairing the other aqueducts, he was awarded a statue in his honor, also shown on the reverse. The flower below may be a martialis which is a canting pun on the gens Marcia name.

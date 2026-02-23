@@ -34,6 +34,7 @@ metal: Silver
 weight: "3.80g"
 diameter: "19mm"
 grade: "Fine"                 # Numismatic grade (EF, gVF, Fine, etc.)
+provenance: "Auction House 2020; Private Collection 2015-2020; Dealer X"  # Optional; use semicolons to separate multiple entries for bullet list
 image_obverse: coins/julius_caesar/caesar-obv.png
 image_reverse: coins/julius_caesar/caesar-rev.png
 image_aligned: coins/julius_caesar/caesar-aligned.png  # Side-by-side obverse/reverse
@@ -50,6 +51,7 @@ Historical description and context here. Can include HTML embeds like videos and
 - `image_aligned`: Optional but recommended for collection grid display (side-by-side on black background)
 - `period`: Must match filter values exactly (`Greek`, `Republican`, `Imperatorial`, `Imperial`). Note: `Imperatorial` is the transition period between Republican and Imperial eras (late Roman civil wars).
 - `reference`: Use standard numismatic citations; can include HTML `<a>` tags for linking
+- `provenance`: Optional field for coin ownership history; separate multiple entries with semicolons (`;`) to render as bulleted list
 - Markdown body supports HTML: videos (`video.liquid`), figures (`figure.liquid`), blockquotes
 
 ### Site Pages

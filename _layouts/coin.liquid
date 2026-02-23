@@ -106,6 +106,21 @@ layout: default
           <dd>{{ page.reference }}</dd>
         {% endif %}
         
+        {% if page.provenance %}
+          <dt>Provenance:</dt>
+          <dd>
+            {% assign provenance_entries = page.provenance | split: ";" %}
+            {% if provenance_entries.size > 1 %}
+              <ul style="margin: 0; padding-left: 1.2em;">
+                {% for entry in provenance_entries %}
+                  <li>{{ entry | strip }}</li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              {{ page.provenance }}
+            {% endif %}
+          </dd>
+        {% endif %}
        
       </dl>
     </div>

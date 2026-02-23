@@ -318,6 +318,11 @@ ninja.data = [{
           description: "",
           section: "Coins",handler: () => {
               window.location.href = "/coins/faustus_sulla_signet/";
+            },},{id: "coins-denarius-of-l-marcius-philippus",
+          title: 'Denarius of L. Marcius Philippus',
+          description: "",
+          section: "Coins",handler: () => {
+              window.location.href = "/coins/l_marcius_philippus/";
             },},{id: "coins-denarius-of-l-cassius-longinus",
           title: 'Denarius of L. Cassius Longinus',
           description: "",

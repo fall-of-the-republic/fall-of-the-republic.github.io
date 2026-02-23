@@ -12,6 +12,7 @@ metal: Silver
 weight: "3.99g"
 diameter: "18mm"
 grade: ""
+provenance: "Inventory of Argentus Rare Coins; Ex: Dr. Busso Peus Nachf Auction 442 - Lot 282; Ex: Collection of Dr. M Erworben - Münzhandlung Ritter, Dussledorf"
 image_obverse: coins/l_marcius_philippus/l_marcius_philippus-obv.png
 image_reverse: coins/l_marcius_philippus/l_marcius_philippus-rev.png
 image_aligned: coins/l_marcius_philippus/l_marcius_philippus-aligned.png

@@ -11,7 +11,7 @@ reference: '<a href="https://numismatics.org/crro/id/rrc-425.1">Crawford 425/1</
 metal: Silver
 weight: "3.99g"
 diameter: "18mm"
-grade: ""
+grade: "VF"
 provenance: "Inventory of Argentus Rare Coins; Ex: Dr. Busso Peus Nachf Auction 442 - Lot 282; Ex: Collection of Dr. M Erworben - Münzhandlung Ritter, Dussledorf"
 image_obverse: coins/l_marcius_philippus/l_marcius_philippus-obv.png
 image_reverse: coins/l_marcius_philippus/l_marcius_philippus-rev.png

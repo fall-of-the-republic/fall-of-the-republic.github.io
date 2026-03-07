@@ -233,6 +233,11 @@ ninja.data = [{
           description: "",
           section: "Coins",handler: () => {
               window.location.href = "/coins/p_licinius_nerva/";
+            },},{id: "coins-denarius-of-marcus-furius-philus",
+          title: 'Denarius of Marcus Furius Philus',
+          description: "",
+          section: "Coins",handler: () => {
+              window.location.href = "/coins/marcus_furius_philus/";
             },},{id: "coins-denarius-of-c-cassius",
           title: 'Denarius of C. Cassius',
           description: "",

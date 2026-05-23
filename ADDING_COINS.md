@@ -67,6 +67,55 @@ python3 tools/align_coin_images.py \
 
 This creates a side-by-side image used in the collection grid.
 
+### 3b. Normalizing Coin Sizes (When the Two Sides Look Mismatched)
+
+If the obverse and reverse photographs were taken at different zoom levels or have different amounts of background padding, the aligned image will show one coin visibly smaller than the other.
+
+**Solution:** Use the background-removed versions of the images (one per side, with transparent backgrounds) to detect the actual coin extent, scale both to the same physical diameter, center them on equal-sized black canvases, and regenerate the aligned image.
+
+Requires background-removed PNGs for both sides (e.g. exported from Photoshop or an AI removal tool).
+
+```python
+# Run with: python3 - << 'EOF' ... EOF  (or save as a script)
+from PIL import Image
+
+obv_bg_removed = "/path/to/obverse-bg-removed.png"
+rev_bg_removed = "/path/to/reverse-bg-removed.png"
+
+OUT_OBV   = "assets/img/coins/coin-name/coin-name-obv.png"
+OUT_REV   = "assets/img/coins/coin-name/coin-name-rev.png"
+OUT_ALIGN = "assets/img/coins/coin-name/coin-name-aligned.png"
+
+PADDING     = 100   # px of black border around each coin
+TARGET_DIAM = 1500  # coin diameter in pixels in the output images
+
+def normalize(img_path, out_path):
+    img = Image.open(img_path).convert('RGBA')
+    bbox = img.getbbox()               # bounding box of non-transparent pixels
+    coin = img.crop(bbox)
+    scale = TARGET_DIAM / max(coin.width, coin.height)
+    new_w, new_h = int(coin.width * scale), int(coin.height * scale)
+    coin_scaled = coin.resize((new_w, new_h), Image.Resampling.LANCZOS)
+    canvas_size = TARGET_DIAM + 2 * PADDING
+    canvas = Image.new('RGBA', (canvas_size, canvas_size), (0, 0, 0, 255))
+    x = (canvas_size - new_w) // 2
+    y = (canvas_size - new_h) // 2
+    canvas.paste(coin_scaled, (x, y), coin_scaled)
+    canvas.convert('RGB').save(out_path, 'PNG')
+
+normalize(obv_bg_removed, OUT_OBV)
+normalize(rev_bg_removed, OUT_REV)
+
+obv = Image.open(OUT_OBV)
+rev = Image.open(OUT_REV)
+combined = Image.new('RGB', (obv.width + rev.width, obv.height), (0, 0, 0))
+combined.paste(obv, (0, 0))
+combined.paste(rev, (obv.width, 0))
+combined.save(OUT_ALIGN, 'PNG')
+```
+
+This overwrites the individual obverse/reverse images as well as the aligned image — all three will have consistent sizing. No frontmatter changes needed unless the file extension changes (e.g. if you were previously using a `.jpg` obverse, update `image_obverse` to `.png`).
+
 ### 4. Create Coin Markdown Entry
 
 Create `_coins/coin_name.md` with this template:

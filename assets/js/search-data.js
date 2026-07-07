@@ -358,6 +358,11 @@ ninja.data = [{
           description: "",
           section: "Coins",handler: () => {
               window.location.href = "/coins/titus/";
+            },},{id: "coins-denarius-of-q-caecilius-metellus-pius",
+          title: 'Denarius of Q. Caecilius Metellus Pius',
+          description: "",
+          section: "Coins",handler: () => {
+              window.location.href = "/coins/metellus_pius/";
             },},{id: "coins-denarius-of-l-manlius-torquatus",
           title: 'Denarius of L. Manlius Torquatus',
           description: "",

@@ -12,7 +12,6 @@ metal: Silver
 weight: "3.54g"
 diameter: "18mm"
 grade: "VF"
-provenance: "Ex Herakles Numismatics; Ex Nomos Obolos Web Auction 7, Lot 248"
 image_obverse: coins/metellus_pius/metellus-pius-obv.jpg
 image_reverse: coins/metellus_pius/metellus-pius-rev.jpg
 image_aligned: coins/metellus_pius/metellus-pius-aligned.png

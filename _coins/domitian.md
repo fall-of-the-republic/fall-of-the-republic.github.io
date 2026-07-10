@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "Denarius of Domitian"
-period: Imperial
+period: Archive
 issuer: "Domitian"
 mint: Rome
 denomination: Denarius

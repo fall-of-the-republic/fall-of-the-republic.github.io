@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "Denarius of Trajan"
-period: Imperial
+period: Archive
 issuer: "Trajan"
 mint: Rome
 denomination: Denarius

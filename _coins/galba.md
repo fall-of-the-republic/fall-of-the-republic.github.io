@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "Denarius of Galba"
-period: Imperial
+period: Archive
 issuer: Galba
 mint: Rome
 denomination: Denarius

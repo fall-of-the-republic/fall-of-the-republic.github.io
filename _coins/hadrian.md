@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "Denarius of Hadrian"
-period: Imperial
+period: Archive
 issuer: Hadrian
 mint: Rome
 denomination: Denarius

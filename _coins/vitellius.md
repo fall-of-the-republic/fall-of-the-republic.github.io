@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "Denarius of Vitellius"
-period: Imperial
+period: Archive
 issuer: Vitellius
 mint: Rome
 denomination: Denarius

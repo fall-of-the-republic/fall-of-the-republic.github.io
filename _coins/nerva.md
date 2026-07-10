@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "Denarius of Nerva"
-period: Imperial
+period: Archive
 issuer: "Nerva"
 mint: Rome
 denomination: Denarius

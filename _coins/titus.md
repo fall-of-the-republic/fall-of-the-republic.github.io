@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "Denarius of Titus"
-period: Imperial
+period: Archive
 issuer: "Titus"
 mint: Rome
 denomination: Denarius

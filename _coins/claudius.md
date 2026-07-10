@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "As of Claudius"
-period: Imperial
+period: Archive
 issuer: "Claudius"
 mint: Rome
 denomination: As

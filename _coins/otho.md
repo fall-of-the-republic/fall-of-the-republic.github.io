@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "Denarius of Otho"
-period: Imperial
+period: Archive
 issuer: Otho
 mint: Rome
 denomination: Denarius

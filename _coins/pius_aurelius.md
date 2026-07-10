@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "Denarius of Antoninus Pius with Marcus Aurelius as Caesar"
-period: Imperial
+period: Archive
 issuer: "Antoninus Pius and Marcus Aurelius"
 mint: Rome
 denomination: Denarius

@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "Denarius of Nero"
-period: Imperial
+period: Archive
 issuer: Nero
 mint: Rome
 denomination: Denarius

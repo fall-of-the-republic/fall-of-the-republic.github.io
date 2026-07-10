@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "Denarius of Vespasian"
-period: Imperial
+period: Archive
 issuer: "Vespasian"
 mint: Rome
 denomination: Denarius

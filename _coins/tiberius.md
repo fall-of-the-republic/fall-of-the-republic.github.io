@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "Denarius of Tiberius"
-period: Imperial
+period: Archive
 issuer: "Tiberius"
 mint: Rome
 denomination: Denarius

@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "As of Caligula"
-period: Imperial
+period: Archive
 issuer: "Caligula"
 mint: Rome
 denomination: As

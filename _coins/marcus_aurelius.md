@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "Denarius of Marcus Aurelius"
-period: Imperial
+period: Archive
 issuer: "Marcus Aurelius"
 mint: Rome
 denomination: Denarius

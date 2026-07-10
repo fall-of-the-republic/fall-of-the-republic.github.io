@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "Denarius of Commodus"
-period: Imperial
+period: Archive
 issuer: "Commodus"
 mint: Rome
 denomination: Denarius

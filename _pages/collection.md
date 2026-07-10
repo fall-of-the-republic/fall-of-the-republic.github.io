@@ -13,10 +13,10 @@ nav_order: 2
 
 <div class="collection-filters">
   <button class="filter-btn active" data-filter="all">All</button>
-  <button class="filter-btn" data-filter="republican">Republican</button>
-  <button class="filter-btn" data-filter="imperatorial">Imperatorial</button>
-  <button class="filter-btn" data-filter="imperial">Imperial</button>
+  <button class="filter-btn" data-filter="archive">Archive</button>
 </div>
+
+<p id="archive-note" style="display:none; text-align:center; font-style:italic; color:var(--global-text-color-light); margin-bottom:1.5rem;">Coins no longer part of the Fall of the Republic collection</p>
 
 <div class="showcase-gallery">
   {% assign featured_coins = site.coins %}
@@ -180,6 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Filter functionality
   const filterBtns = document.querySelectorAll('.filter-btn');
+  const archiveNote = document.getElementById('archive-note');
   
   filterBtns.forEach(btn => {
     btn.addEventListener('click', function() {
@@ -189,12 +190,15 @@ document.addEventListener('DOMContentLoaded', function() {
       
       const filter = this.dataset.filter;
       
-      // Filter coins
+      // Show archive note only when archive filter is active
+      archiveNote.style.display = filter === 'archive' ? 'block' : 'none';
+
+      // Filter coins — "all" excludes archived coins
       showcaseItems.forEach(item => {
-        if (filter === 'all' || item.dataset.period === filter) {
-          item.style.display = 'flex';
+        if (filter === 'archive') {
+          item.style.display = item.dataset.period === 'archive' ? 'flex' : 'none';
         } else {
-          item.style.display = 'none';
+          item.style.display = item.dataset.period !== 'archive' ? 'flex' : 'none';
         }
       });
     });

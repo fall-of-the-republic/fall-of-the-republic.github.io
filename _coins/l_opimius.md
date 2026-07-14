@@ -6,7 +6,7 @@ issuer: "L. Opimius"
 mint: Rome
 denomination: Denarius
 date_minted: "127* BCE"
-sort_date: -117
+sort_date: -127
 reference: '<a href="http://numismatics.org/crro/id/rrc-253.1">Crawford 253/1</a>; BMCRR Rome 1133; RBW 1036'
 metal: Silver
 grade: "Very Fine"

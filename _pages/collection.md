@@ -177,7 +177,12 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Re-append items in sorted order
   showcaseItems.forEach(item => showcaseGallery.appendChild(item));
-  
+
+  // Hide archived coins on initial load
+  showcaseItems.forEach(item => {
+    if (item.dataset.period === 'archive') item.style.display = 'none';
+  });
+
   // Filter functionality
   const filterBtns = document.querySelectorAll('.filter-btn');
   const archiveNote = document.getElementById('archive-note');

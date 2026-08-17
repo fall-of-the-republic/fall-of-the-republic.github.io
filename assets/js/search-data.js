@@ -313,6 +313,11 @@ ninja.data = [{
           description: "",
           section: "Coins",handler: () => {
               window.location.href = "/coins/brutus_ahala/";
+            },},{id: "coins-denarius-of-q-cassius-longinus",
+          title: 'Denarius of Q. Cassius Longinus',
+          description: "",
+          section: "Coins",handler: () => {
+              window.location.href = "/coins/q_cassius_longinus/";
             },},{id: "coins-denarius-of-faustus-cornelius-sulla",
           title: 'Denarius of Faustus Cornelius Sulla',
           description: "",

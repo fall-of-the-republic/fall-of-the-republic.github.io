@@ -17,7 +17,7 @@ image_reverse: coins/titurius_sabine_women/titurius_sabine_women-rev.png
 image_aligned: coins/titurius_sabine_women/titurius_sabine_women-aligned.png
 obverse_description: "Bare head of king Tatius r.; SABIN behind and monogram TA before"
 reverse_description: "Two Roman soldiers each carrying away a Sabine women in their arms; L. TITURI in exergue."
-featured: false
+featured: true
 ---
 
 Roman republican coins often featured images from their foundation myths: the she-wolf suckling Romulus and Remus, the Dioscuri riding in Lake Regillus, or the descendants of Troy arriving in Italy. On the obverse, we see King Tatius of the Sabines, a local Latin tribe. On the reverse, we see one of their less savory stories: The Rape of the Sabine Women. As the story goes, the early Roman settlement was full of outcasts, criminals, and general vagabonds- the kind of people you don't want your daughter to marry. Fearing their new settlement would die out quickly, the Romans reached out to the local tribes to arrange marriage rights. However, they were rebuffed. In a bit of treachery, the Romans held a banquet for neighboring tribes, and during the meal, they rose and abducted all the attending women to forcibly take them as their wives. The reverse shows two soldiers "acquiring" their new brides. Hence the origin of the wedding tradition of carrying a bride into her new home (not really).

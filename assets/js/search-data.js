@@ -308,6 +308,11 @@ ninja.data = [{
           description: "",
           section: "Coins",handler: () => {
               window.location.href = "/coins/sicinius/";
+            },},{id: "coins-denarius-of-q-sicinius-and-c-coponius",
+          title: 'Denarius of Q. Sicinius and C. Coponius',
+          description: "",
+          section: "Coins",handler: () => {
+              window.location.href = "/coins/sicinius_coponius/";
             },},{id: "coins-denarius-of-m-junius-brutus",
           title: 'Denarius of M. Junius Brutus',
           description: "",
@@ -373,6 +378,11 @@ ninja.data = [{
           description: "",
           section: "Coins",handler: () => {
               window.location.href = "/coins/sulla/";
+            },},{id: "coins-denarius-of-m-porcius-cato",
+          title: 'Denarius of M. Porcius Cato',
+          description: "",
+          section: "Coins",handler: () => {
+              window.location.href = "/coins/m_cato_89bce/";
             },},{id: "coins-denarius-of-l-titurius-l-f-sabinus",
           title: 'Denarius of L. Titurius L.f. Sabinus',
           description: "",

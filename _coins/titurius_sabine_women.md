@@ -7,16 +7,16 @@ mint: Rome
 denomination: Denarius
 date_minted: "89 BCE"
 sort_date: -89
-reference: '<a href="http://numismatics.org/crro/id/rrc-344.1a">Crawford 344/1a</a>; Tituria 1; RCV 249'
+reference: '<a href="http://numismatics.org/crro/id/rrc-344.1a">Crawford 344/1a</a>; Sydenham 698; RSC Tituria 1'
 metal: Silver
-weight: "3.81g"
-diameter: "18mm"
-grade: "Fine"
+weight: "3.94g"
+diameter: "19mm"
+grade: "VF+"
 image_obverse: coins/titurius_sabine_women/titurius_sabine_women-obv.png
 image_reverse: coins/titurius_sabine_women/titurius_sabine_women-rev.png
 image_aligned: coins/titurius_sabine_women/titurius_sabine_women-aligned.png
-obverse_description: "Bare head of king Tatius r.; SABIN behind and monogram TA before"
-reverse_description: "Two Roman soldiers each carrying away a Sabine women in their arms; L. TITURI in exergue."
+obverse_description: "Bareheaded, bearded head of King Tatius right; SABIN downward to left, TA monogram to right"
+reverse_description: "Abduction of the Sabine Women: two soldiers, facing each other, each carrying off a Sabine woman in his arms; L TITVRI in exergue"
 featured: true
 ---
 

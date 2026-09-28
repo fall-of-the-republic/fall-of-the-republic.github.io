@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "Denarius of L. Titurius L.f. Sabinus"
-period: Republican
+period: Archive
 issuer: "L. Titurius L.f. Sabinus"
 mint: Rome
 denomination: Denarius

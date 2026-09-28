@@ -10,7 +10,7 @@ sort_date: 9
 reference: '<a href="http://numismatics.org/ocre/id/ric.1(2).aug.234">RIC I² 234</a>'
 metal: Bronze
 weight: "4.97g"
-diameter: "11mm"
+diameter: "21mm"
 grade: "Very Fine"
 image_obverse: coins/augustus_lugdunum/augustus_lugdunum-obv.png
 image_reverse: coins/augustus_lugdunum/augustus_lugdunum-rev.png

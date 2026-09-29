@@ -6,7 +6,7 @@ issuer: "Q. Cassius Longinus"
 mint: Rome
 denomination: Denarius
 date_minted: "55 BCE"
-sort_date: -55
+sort_date: -55.2
 reference: '<a href="http://numismatics.org/crro/id/rrc-428.2">Crawford 428/2</a>; BMCRR Rome 3873'
 metal: Silver
 weight: "3.9g"

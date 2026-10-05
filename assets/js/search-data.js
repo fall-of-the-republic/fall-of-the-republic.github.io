@@ -318,6 +318,11 @@ ninja.data = [{
           description: "",
           section: "Coins",handler: () => {
               window.location.href = "/coins/brutus_ahala/";
+            },},{id: "coins-denarius-of-p-licinius-crassus",
+          title: 'Denarius of P. Licinius Crassus',
+          description: "",
+          section: "Coins",handler: () => {
+              window.location.href = "/coins/p_licinius_crassus/";
             },},{id: "coins-denarius-of-q-cassius-longinus",
           title: 'Denarius of Q. Cassius Longinus',
           description: "",

@@ -1,10 +1,7 @@
 ---
 layout: default
 ---
-{% assign year = page.date | date: '%Y' %}
 {% assign tags = page.tags | join: '' %}
-{% assign categories = page.categories | join: '' %}
-{% assign url_beginning = page.url | slice: 0, 6 %}
 
 {% if page._styles %}
   <!-- Page/Post style -->
@@ -23,33 +20,9 @@ layout: default
       {% if page.meta %}• {{ page.meta }}{% endif %}
     </p>
     <p class="post-tags">
-      {% if url_beginning == '/blog/' %}
-        <a href="{{ year | prepend: '/blog/' | relative_url }}"> <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
-      {% else %}
-        <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
-      {% endif %}
       {% if tags != '' %}
-        &nbsp; &middot; &nbsp;
         {% for tag in page.tags %}
-          {% if url_beginning == '/blog/' %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}"> <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
-          {% else %}
-            <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
-          {% endif %}
-          {% unless forloop.last %}
-            &nbsp;
-          {% endunless %}
-        {% endfor %}
-      {% endif %}
-
-      {% if categories != '' %}
-        &nbsp; &middot; &nbsp;
-        {% for category in page.categories %}
-          {% if url_beginning == '/blog/' %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}"> <i class="fa-solid fa-tag fa-sm"></i> {{ category -}}</a>
-          {% else %}
-            <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
-          {% endif %}
+          <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
           {% unless forloop.last %}
             &nbsp;
           {% endunless %}
@@ -57,6 +30,39 @@ layout: default
       {% endif %}
     </p>
   </header>
+
+  {% if page.coin_header and page.coins.size > 0 %}
+    {% for slug in page.coins %}
+      {% assign hcoin = site.coins | where: "slug", slug | first %}
+      {% if hcoin %}
+        <div class="post-coin-header">
+          <div class="post-coin-images">
+            {% if hcoin.image_obverse %}
+              <div>
+                {% assign obv_alt = hcoin.title | append: " - Obverse" %}
+                {% assign obv_path = "assets/img/" | append: hcoin.image_obverse %}
+                {% include figure.liquid path=obv_path alt=obv_alt zoomable=true %}
+                <p class="image-label">Obverse{% if hcoin.obverse_description %}: {{ hcoin.obverse_description }}{% endif %}</p>
+              </div>
+            {% endif %}
+            {% if hcoin.image_reverse %}
+              <div>
+                {% assign rev_alt = hcoin.title | append: " - Reverse" %}
+                {% assign rev_path = "assets/img/" | append: hcoin.image_reverse %}
+                {% include figure.liquid path=rev_path alt=rev_alt zoomable=true %}
+                <p class="image-label">Reverse{% if hcoin.reverse_description %}: {{ hcoin.reverse_description }}{% endif %}</p>
+              </div>
+            {% endif %}
+          </div>
+          <p class="post-coin-caption">
+            <a href="{{ hcoin.url | relative_url }}">{{ hcoin.title }}</a>
+            {% if hcoin.date_minted %}&middot; {{ hcoin.date_minted }}{% endif %}
+            {% if hcoin.reference %}&middot; {{ hcoin.reference }}{% endif %}
+          </p>
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 
   <article class="post-content">
     {% if page.toc and page.toc.beginning %}
@@ -69,6 +75,29 @@ layout: default
       {{ content }}
     </div>
   </article>
+
+  {% if page.coins.size > 0 %}
+    <div class="post-coins">
+      <h4>Coins in this post</h4>
+      <div class="post-coins-grid">
+        {% for slug in page.coins %}
+          {% assign coin = site.coins | where: "slug", slug | first %}
+          {% if coin %}
+            <a href="{{ coin.url | relative_url }}" class="post-coin">
+              {% if coin.image_obverse %}
+                <img src="{{ coin.image_obverse | prepend: '/assets/img/' | relative_url }}" alt="{{ coin.title }}" loading="lazy">
+              {% endif %}
+              <span>{{ coin.title }}</span>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="post-back">
+    <a href="{{ '/blog/' | relative_url }}">&larr; Back to Blog</a>
+  </div>
 
   {% if page.citation %}
     {% include citation.liquid %}
@@ -94,3 +123,80 @@ layout: default
     {% include giscus.liquid %}
   {% endif %}
 </div>
+
+<style>
+.post-coin-header {
+  margin: 1.5rem 0 2rem;
+}
+
+.post-coin-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 340px));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.post-coin-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.post-coin-images .image-label {
+  text-align: center;
+  font-style: italic;
+  color: var(--global-text-color-light);
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.post-coin-caption {
+  text-align: center;
+  color: var(--global-text-color-light);
+  margin-top: 1rem;
+}
+
+@media (max-width: 576px) {
+  .post-coin-images {
+    grid-template-columns: 1fr;
+  }
+}
+
+.post-coins {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.post-coins-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.post-coin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  text-align: center;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.post-coin img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  background: #000;
+  border-radius: 50%;
+  padding: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.post-back {
+  margin-top: 2rem;
+}
+</style>

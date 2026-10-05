@@ -46,6 +46,21 @@ layout: default
       {{ content }}
     </div>
 
+    {% assign related_stories = site.posts | where_exp: "post", "post.coins contains page.slug" %}
+    {% if related_stories.size > 0 %}
+      <div class="coin-stories">
+        <h3>Related stories</h3>
+        <ul>
+          {% for post in related_stories %}
+            <li>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
     <div class="coin-details">
       <h3>Details</h3>
       <dl>
@@ -267,6 +282,35 @@ layout: default
 .coin-description {
   line-height: 1.8;
   margin: 2rem 0;
+}
+
+.coin-stories {
+  border-left: 3px solid var(--global-theme-color);
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin: 2rem 0;
+}
+
+.coin-stories h3 {
+  margin-top: 0;
+}
+
+.coin-stories ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.coin-stories li + li {
+  margin-top: 1rem;
+}
+
+.coin-stories li a {
+  font-weight: 600;
+}
+
+.coin-stories li p {
+  margin: 0.25rem 0 0;
+  color: var(--global-text-color-light);
 }
 
 .coin-tags {

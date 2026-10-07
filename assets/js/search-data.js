@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/collection/";
           },
+        },{id: "nav-blog",
+          title: "Blog",
+          description: "Stories that cut across coins — people, institutions, and ideas that don&#39;t fit on a single coin page.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
         },{id: "nav-books",
           title: "Books",
           description: "",

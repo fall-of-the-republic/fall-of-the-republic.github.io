@@ -404,11 +404,6 @@ ninja.data = [{
           title: 'Denarius of L. Titurius L.f. Sabinus',
           description: "",
           section: "Coins",handler: () => {
-              window.location.href = "/coins/titurius_sabine_women/";
-            },},{id: "coins-denarius-of-l-titurius-l-f-sabinus",
-          title: 'Denarius of L. Titurius L.f. Sabinus',
-          description: "",
-          section: "Coins",handler: () => {
               window.location.href = "/coins/titurius_sabine_women_archived/";
             },},{id: "coins-denarius-of-l-titurius-l-f-sabinus",
           title: 'Denarius of L. Titurius L.f. Sabinus',
@@ -460,6 +455,11 @@ ninja.data = [{
           description: "",
           section: "Coins",handler: () => {
               window.location.href = "/coins/neria/";
+            },},{id: "coins-",
+          title: '',
+          description: "",
+          section: "Coins",handler: () => {
+              window.location.href = "/coins/titurius_sabine_women/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',

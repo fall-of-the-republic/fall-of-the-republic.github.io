@@ -7,7 +7,7 @@ mint: Rome
 denomination: Denarius
 date_minted: "89 BCE"
 sort_date: -89
-reference: '<a href="http://numismatics.org/crro/id/rrc-344.1a">Crawford 344/1a</a>; Sydenham 698; RSC Tituria 1'
+reference: '<a href="http://numismatics.org/crro/id/rrc-344.1a">Crawford 344/1a</a>
 metal: Silver
 weight: "3.94g"
 diameter: "19mm"

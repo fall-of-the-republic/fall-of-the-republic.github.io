@@ -13,3 +13,6 @@ vendor
 .idea
 .venv
 venv
+
+# Generated reports
+lighthouse_results/

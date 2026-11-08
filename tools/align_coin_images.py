@@ -56,7 +56,10 @@ def align_images(obverse_path, reverse_path, output_path, spacing=0, bg_color=(0
     combined.paste(reverse_resized, (obverse_resized.width + spacing, 0), reverse_resized if reverse_resized.mode == 'RGBA' else None)
     
     # Save
-    combined.save(output_path, 'PNG')
+    if output_path.lower().endswith(('.jpg', '.jpeg')):
+        combined.save(output_path, 'JPEG', quality=90, optimize=True, subsampling=0)
+    else:
+        combined.save(output_path, 'PNG', optimize=True)
     print(f"\nAligned image saved to: {output_path}")
     print(f"Dimensions: {combined_width}x{combined_height}")
 

@@ -247,9 +247,23 @@ def create_aligned_image(obv_path, rev_path, output_path, bg_color='black'):
     aligned_img.paste(obv_resized, (0, 0), obv_resized)
     aligned_img.paste(rev_resized, (obv_width, 0), rev_resized)
     
-    # Save
-    aligned_img.save(output_path, 'PNG')
+    aligned_img.save(output_path, 'JPEG', quality=90, optimize=True, subsampling=0)
     return total_width, total_height
+
+
+def save_web_image(src_path, dest_stem, max_edge=2400):
+    """Save a web-sized copy: JPG q90, or optimized PNG if it has real transparency. Returns dest Path."""
+    img = Image.open(src_path)
+    has_alpha = img.mode in ('RGBA', 'LA') and img.getchannel('A').getextrema()[0] < 255
+    if max(img.size) > max_edge:
+        img.thumbnail((max_edge, max_edge), Image.Resampling.LANCZOS)
+    if has_alpha:
+        dest = Path(f"{dest_stem}.png")
+        img.save(dest, 'PNG', optimize=True)
+    else:
+        dest = Path(f"{dest_stem}.jpg")
+        img.convert('RGB').save(dest, 'JPEG', quality=90, optimize=True, subsampling=0)
+    return dest
 
 
 def generate_filename(title, folder_name=None, max_length=80):
@@ -452,12 +466,10 @@ def process_coin_folder(folder_path, bg_color, force=False):
         
         # Copy images
         print("🖼️  Copying images...")
-        obv_dest = img_dir / f"{filename}-obv.png"
-        rev_dest = img_dir / f"{filename}-rev.png"
-        aligned_dest = img_dir / f"{filename}-aligned.png"
+        aligned_dest = img_dir / f"{filename}-aligned.jpg"
         
-        shutil.copy(obv_path, obv_dest)
-        shutil.copy(rev_path, rev_dest)
+        obv_dest = save_web_image(obv_path, img_dir / f"{filename}-obv")
+        rev_dest = save_web_image(rev_path, img_dir / f"{filename}-rev")
         
         # Create aligned image
         print("⚙️  Creating aligned image...")
@@ -566,12 +578,10 @@ def process_legacy_mode(docx_path, obv_path, rev_path, bg_color):
     
     # Copy images
     print("🖼️  Copying images...")
-    obv_dest = img_dir / f"{filename}-obv.png"
-    rev_dest = img_dir / f"{filename}-rev.png"
-    aligned_dest = img_dir / f"{filename}-aligned.png"
+    aligned_dest = img_dir / f"{filename}-aligned.jpg"
     
-    shutil.copy(obv_path, obv_dest)
-    shutil.copy(rev_path, rev_dest)
+    obv_dest = save_web_image(obv_path, img_dir / f"{filename}-obv")
+    rev_dest = save_web_image(rev_path, img_dir / f"{filename}-rev")
     
     # Create aligned image
     print("⚙️  Creating aligned image...")

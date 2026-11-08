@@ -2,6 +2,8 @@
 
 ## Quick Reference: Manual Workflow
 
+**Image size policy:** commit web-sized JPG (quality 90, 4:4:4, long edge ≤ 2400 px; aligned ≤ 4800 px), not full-size PNG scans. Keep PNG only for images with real transparency. `tools/add_coin.py` does this automatically; for manual additions convert first, e.g. `magick in.png -quality 90 -sampling-factor 4:4:4 out.jpg`. Keep original scans outside the repo.
+
 For most cases, **manually add coins** using this streamlined process:
 
 ```bash

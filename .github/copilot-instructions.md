@@ -35,9 +35,9 @@ weight: "3.80g"
 diameter: "19mm"
 grade: "Fine"                 # Numismatic grade (EF, gVF, Fine, etc.)
 provenance: "Auction House 2020; Private Collection 2015-2020; Dealer X"  # Optional; use semicolons to separate multiple entries for bullet list
-image_obverse: coins/julius_caesar/caesar-obv.png
-image_reverse: coins/julius_caesar/caesar-rev.png
-image_aligned: coins/julius_caesar/caesar-aligned.png  # Side-by-side obverse/reverse
+image_obverse: coins/julius_caesar/caesar-obv.jpg
+image_reverse: coins/julius_caesar/caesar-rev.jpg
+image_aligned: coins/julius_caesar/caesar-aligned.jpg  # Side-by-side obverse/reverse
 obverse_description: "Wreathed head of Caesar right; star behind; CAESAR IM[P]"
 reverse_description: "Venus standing left, holding Victory; P SEPVLLIVS behind"
 featured: true                # Shows in showcase and featured galleries

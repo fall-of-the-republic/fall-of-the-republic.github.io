@@ -12,9 +12,9 @@ metal: Silver
 weight: "3.24g"
 diameter: "18mm"
 grade: "Very Fine"
-image_obverse: coins/domitian/domitian-obv.png
-image_reverse: coins/domitian/domitian-rev.png
-image_aligned: coins/domitian/domitian-aligned.png
+image_obverse: coins/domitian/domitian-obv.jpg
+image_reverse: coins/domitian/domitian-rev.jpg
+image_aligned: coins/domitian/domitian-aligned.jpg
 obverse_description: Laureate head of Domitian right; IMP CAES DOMIT AVG GERM P M TR P XII around
 reverse_description: Minerva standing to right on capital of rostral column, holding spear and shield; owl at feet on right; IMP XXII COS XVI CENS P P P around
 featured: false

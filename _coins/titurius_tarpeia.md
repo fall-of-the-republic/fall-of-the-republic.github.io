@@ -11,9 +11,9 @@ reference: '<a href="http://numismatics.org/crro/id/rrc-344.2b">Crawford 344/2b<
 metal: Silver
 weight: "3.92g"
 grade: "Very Fine"
-image_obverse: coins/titurius_tarpeia/titurius_tarpeia-obv.png
-image_reverse: coins/titurius_tarpeia/titurius_tarpeia-rev.png
-image_aligned: coins/titurius_tarpeia/titurius_tarpeia-aligned.png
+image_obverse: coins/titurius_tarpeia/titurius_tarpeia-obv.jpg
+image_reverse: coins/titurius_tarpeia/titurius_tarpeia-rev.jpg
+image_aligned: coins/titurius_tarpeia/titurius_tarpeia-aligned.jpg
 obverse_description: "Bare head of king Tatius right; SABIN behind [and palm branch before]"
 reverse_description: "Tarpeia facing, buried to her waist in shields, trying to ward off two soldiers who are about to cast their shields on her; [star within crescent moon above]; L. TITURI in exergue"
 featured: false

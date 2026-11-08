@@ -12,9 +12,9 @@ metal: Silver
 weight: "3.21g"
 diameter: "21mm"
 grade: "Very Fine"
-image_obverse: coins/octavian_curia_julia/octavian_curia_julia-obv.png
-image_reverse: coins/octavian_curia_julia/octavian_curia_julia-rev.png
-image_aligned: coins/octavian_curia_julia/octavian_curia_julia-aligned.png
+image_obverse: coins/octavian_curia_julia/octavian_curia_julia-obv.jpg
+image_reverse: coins/octavian_curia_julia/octavian_curia_julia-rev.jpg
+image_aligned: coins/octavian_curia_julia/octavian_curia_julia-aligned.jpg
 obverse_description: "Bare head of Octavian right"
 reverse_description: "[IMP CAESAR] on the architrave of the Curia Julia; Statue of Victory on globe at apex of temple; warriors at the angles"
 featured: false

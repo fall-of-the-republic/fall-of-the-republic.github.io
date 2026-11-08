@@ -11,9 +11,9 @@ reference: '<a href="https://numismatics.org/ocre/id/ric.2.tr.49_denarius">RIC I
 metal: Silver
 weight: "3.19g"
 grade: "Very Fine"
-image_obverse: coins/trajan/trajan-obv.png
-image_reverse: coins/trajan/trajan-rev.png
-image_aligned: coins/trajan/trajan-aligned.png
+image_obverse: coins/trajan/trajan-obv.jpg
+image_reverse: coins/trajan/trajan-rev.jpg
+image_aligned: coins/trajan/trajan-aligned.jpg
 obverse_description: "Laureate head of Trajan right; IMP CAES NERVA TRAIAN AVG GERMAN"
 reverse_description: "Hercules wearing lionskin and holding club; P M TR P COS IIII P P"
 featured: false

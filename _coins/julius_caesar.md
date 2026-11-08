@@ -12,9 +12,9 @@ metal: Silver
 weight: "3.80g"
 diameter: "19mm"
 grade: "Fine"
-image_obverse: coins/julius_caesar/caesar-obv.png
-image_reverse: coins/julius_caesar/caesar-rev.png
-image_aligned: coins/julius_caesar/caesar-aligned.png
+image_obverse: coins/julius_caesar/caesar-obv.jpg
+image_reverse: coins/julius_caesar/caesar-rev.jpg
+image_aligned: coins/julius_caesar/caesar-aligned.jpg
 obverse_description: "Wreathed head of Caesar right; large eight-ray star behind; CAESAR IM[P]"
 reverse_description: "Venus standing left, head lowered to left, holding Victory in her right hand and long sceptre set on star in her left; P SEPVLLIVS behind, M[ACER] before."
 featured: true
@@ -54,7 +54,7 @@ Caesar's accession to perpetual dictatorship has been viewed as the inevitable o
 <div class="row mt-3">
   <div class="col-md-6 text-center">
     <div class="d-inline-block">
-      {% include figure.liquid path="assets/img/coins/julius_caesar/eid-mar-rev-cropped.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+      {% include figure.liquid path="assets/img/coins/julius_caesar/eid-mar-rev-cropped.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
       <p class="text-center text-muted mt-2 mb-0"><small>The EID MAR coin of Brutus commemorating the assassination<br><a href="https://numismatics.org/collection/1944.100.4554" target="_blank">Source: Author's photo of ANS 1944.100.4554</a></small></p>
     </div>
   </div>

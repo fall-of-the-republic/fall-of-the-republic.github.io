@@ -11,12 +11,12 @@ reference: '<a href="http://numismatics.org/crro/id/rrc-415.1">Crawford 415/1</a
 metal: Silver
 weight: "3.67g"
 grade: "Very Fine"
-image_obverse: coins/aemilia/aemilia-obv.png
-image_reverse: coins/aemilia/aemilia-rev.png
-image_aligned: coins/aemilia/aemilia-aligned.png
+image_obverse: coins/aemilia/aemilia-obv.jpg
+image_reverse: coins/aemilia/aemilia-rev.jpg
+image_aligned: coins/aemilia/aemilia-aligned.jpg
 obverse_description: "Head of Concordia right, wearing veil and diadem; on left PAVLLVS LEPIDVS; on right CONCORDIA"
 reverse_description: "Trophy; above TER; on right togate figure (Macedonicus); on left three captives (King Perseus of Macedon and his sons); in exergue, PAVLLVS"
-featured: true
+featured: false
 ---
 
 An adage in coin collecting is “Buy the book before the coin.” The thought is that while much is learned from viewing a coin, having authoritative references provides a deeper insight into rarity, value, and historical context. This coin is one of those cases. I’ve known for some time that its basic imagery shows the defeat of King Perseus of Macdeon at the hands of L. Aemilius Paullus Macedeonicus. I also have the standard reference, Crawford, but failed to read it. My naïve assumption was that the moneyer was a son or grandson of Macedonicus and was following the trend of many late Republican moneyers and honoring his forefathers. But the truth is more profound and interesting. 

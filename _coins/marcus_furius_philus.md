@@ -11,9 +11,9 @@ metal: Silver
 weight: "3.78g"
 diameter: "20mm"
 grade: "VF"
-image_obverse: coins/marcus_furius_philus/obverse.png
-image_reverse: coins/marcus_furius_philus/reverse.png
-image_aligned: coins/marcus_furius_philus/aligned.png
+image_obverse: coins/marcus_furius_philus/obverse.jpg
+image_reverse: coins/marcus_furius_philus/reverse.jpg
+image_aligned: coins/marcus_furius_philus/aligned.jpg
 obverse_description: "Laureate head of Janus, M·FOVRI·L·F around. Border of dots."
 reverse_description: "Roma victrix standing left wearing Corinthian helmet and holding sceptre, crowning a trophy of arms flanked by carynx and shield on each side, above her head a [star]. To right, ROMA and in exergue, P͡H͡ILI."
 featured: false

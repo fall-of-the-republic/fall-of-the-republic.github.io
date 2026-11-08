@@ -12,9 +12,9 @@ metal: Silver
 weight: "3.29g"
 diameter: "18mm"
 grade: "Very Fine"
-image_obverse: coins/vespasian/vespasian-obv.png
-image_reverse: coins/vespasian/vespasian-rev.png
-image_aligned: coins/vespasian/vespasian-aligned.png
+image_obverse: coins/vespasian/vespasian-obv.jpg
+image_reverse: coins/vespasian/vespasian-rev.jpg
+image_aligned: coins/vespasian/vespasian-aligned.jpg
 obverse_description: "Laureate head of Vespasian right; IMP CAESAR VESP AVG"
 reverse_description: "Vespasian seated right on curule chair, holding sceptre and olive branch; PONTIF MAXIM"
 featured: false

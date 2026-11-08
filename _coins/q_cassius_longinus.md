@@ -12,9 +12,9 @@ metal: Silver
 weight: "3.9g"
 diameter: "20mm"
 grade: "VF/Good VF"
-image_obverse: coins/q_cassius_longinus/q_cassius_longinus-obv.png
-image_reverse: coins/q_cassius_longinus/q_cassius_longinus-rev.png
-image_aligned: coins/q_cassius_longinus/q_cassius_longinus-aligned.png
+image_obverse: coins/q_cassius_longinus/q_cassius_longinus-obv.jpg
+image_reverse: coins/q_cassius_longinus/q_cassius_longinus-rev.jpg
+image_aligned: coins/q_cassius_longinus/q_cassius_longinus-aligned.jpg
 obverse_description: "Head of Libertas right; behind, LIBERT (upwards); before, Q·CASSIVS"
 reverse_description: "Temple of Vesta, within curule chair; on left, urn; on right, tablet inscribed AC (Absolvo/Condemno)"
 featured: false

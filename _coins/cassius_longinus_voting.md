@@ -13,7 +13,7 @@ weight: 4.02g
 grade: Very Fine
 image_obverse: coins/cassius_longinus_voting/cassius_longinus_voting-obv.png
 image_reverse: coins/cassius_longinus_voting/cassius_longinus_voting-rev.png
-image_aligned: coins/cassius_longinus_voting/cassius_longinus_voting-aligned.png
+image_aligned: coins/cassius_longinus_voting/cassius_longinus_voting-aligned.jpg
 obverse_description: "Diademed and veiled head of Vesta left; below chin L (control letter); in right field dish"
 reverse_description: "Voter standing left, dropping tablet inscribed with V into cista; LONGIN III V"
 featured: true

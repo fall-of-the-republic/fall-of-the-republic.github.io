@@ -12,9 +12,9 @@ metal: Bronze
 weight: "10.44g"
 diameter: "29mm"
 grade: "Near Very Fine"
-image_obverse: coins/caligula/caligula-obv.png
-image_reverse: coins/caligula/caligula-rev.png
-image_aligned: coins/caligula/caligula-aligned.png
+image_obverse: coins/caligula/caligula-obv.jpg
+image_reverse: coins/caligula/caligula-rev.jpg
+image_aligned: coins/caligula/caligula-aligned.jpg
 obverse_description: "Bare head of Gaius, left; C CAESAR DIVI AVG PRON AVG P M TR P IIII PP"
 reverse_description: "Vesta, veiled and draped, seated left on ornamental throne, right hand holding patera with left holding long transverse sceptre; VESTA (above), S--C to left and right;"
 featured: false

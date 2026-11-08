@@ -11,9 +11,9 @@ reference: '<a href="http://numismatics.org/crro/id/rrc-433.2">Crawford 433/2</a
 metal: Silver
 weight: "3.70g"
 grade: "Very Fine"
-image_obverse: coins/brutus_ahala/brutus_ahala-obv.png
-image_reverse: coins/brutus_ahala/brutus_ahala-rev.png
-image_aligned: coins/brutus_ahala/brutus_ahala-aligned.png
+image_obverse: coins/brutus_ahala/brutus_ahala-obv.jpg
+image_reverse: coins/brutus_ahala/brutus_ahala-rev.jpg
+image_aligned: coins/brutus_ahala/brutus_ahala-aligned.jpg
 obverse_description: "Head of L. Junius Brutus right; BRUTUS behind"
 reverse_description: "Head of C. Servilius Ahala right; AHALA behind"
 featured: false

@@ -11,9 +11,9 @@ reference: '<a href="https://numismatics.org/crro/id/rrc-426.4b" target="_blank"
 metal: Silver
 weight: "3.73g"
 grade: "VF"
-image_obverse: coins/faustus_sulla/faustus-sulla-pompey-obv.png
-image_reverse: coins/faustus_sulla/faustus-sulla-pompey-rev.png
-image_aligned: coins/faustus_sulla/faustus-sulla-pompey-aligned.png
+image_obverse: coins/faustus_sulla/faustus-sulla-pompey-obv.jpg
+image_reverse: coins/faustus_sulla/faustus-sulla-pompey-rev.jpg
+image_aligned: coins/faustus_sulla/faustus-sulla-pompey-aligned.jpg
 obverse_description: "Head of Hercules right wearing lion-skin; SC behind"
 reverse_description: "Globe surrounded by three small wreaths and a large one; below to left aplustre, [to right. corn-ear]"
 featured: true

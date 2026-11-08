@@ -12,9 +12,9 @@ metal: Silver
 weight: "2.73g"
 diameter: "19mm"
 grade: "Very Fine"
-image_obverse: coins/commodus/commodus-obv.png
-image_reverse: coins/commodus/commodus-rev.png
-image_aligned: coins/commodus/commodus-aligned.png
+image_obverse: coins/commodus/commodus-obv.jpg
+image_reverse: coins/commodus/commodus-rev.jpg
+image_aligned: coins/commodus/commodus-aligned.jpg
 obverse_description: "Laureate head of Commodus right; M COMMODVS ANTONINVS AVG"
 reverse_description: "Roma, seated holding victory and spear; TR P VI IMP IIII COS III PP"
 featured: false

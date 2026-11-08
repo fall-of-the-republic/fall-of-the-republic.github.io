@@ -12,12 +12,12 @@ metal: Silver
 weight: "3.92g"
 diameter: "18mm"
 grade: "gVF"
-image_obverse: coins/p_licinius_crassus/p_licinius_crassus-obv.png
-image_reverse: coins/p_licinius_crassus/p_licinius_crassus-rev.png
-image_aligned: coins/p_licinius_crassus/p_licinius_crassus-aligned.png
+image_obverse: coins/p_licinius_crassus/p_licinius_crassus-obv.jpg
+image_reverse: coins/p_licinius_crassus/p_licinius_crassus-rev.jpg
+image_aligned: coins/p_licinius_crassus/p_licinius_crassus-aligned.jpg
 obverse_description: "Diademed and draped bust of Venus right; S·C to left"
 reverse_description: "Soldier standing left, holding spear and leading horse by bridle; cuirass and shield below; P·CRASSVS·M·F around"
-featured: false
+featured: true
 ---
 Minted by Publius Licinius Crassus, son of the Triumvir Marcus, in his role as moneyer for 55 BCE, the year his father and Pompey were consuls together. The obverse shows diademed Venus with S.C (Senatus Consulto) behind. The reverse provides the moneyer’s name but the imagery is disputed. Crawford only states it is a “female figure,” ruling out older readings of a male horseman, but [Liv Yarrow suggests](https://livyarrow.org/2018/06/20/pompeys-amazon/) that the “female figure” is one of the Amazons said to have fought against Pompey in his eastern campaign [(Plutarch, Pompey 35)](https://penelope.uchicago.edu/Thayer/e/roman/texts/plutarch/lives/pompey*.html#35). She also identifies the obverse as Venus Victrix.
 

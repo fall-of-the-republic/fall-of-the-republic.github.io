@@ -11,9 +11,9 @@ metal: Silver
 weight: ""
 diameter: ""
 grade: "Near Extra Fine"
-image_obverse: coins/capio_piso/obv.png
-image_reverse: coins/capio_piso/rev.png
-image_aligned: coins/capio_piso/aligned.png
+image_obverse: coins/capio_piso/obv.jpg
+image_reverse: coins/capio_piso/rev.jpg
+image_aligned: coins/capio_piso/aligned.jpg
 obverse_description: "Laureate head of Saturn right; border of dots; PISO·CAEPIO·Q"
 reverse_description: "Two male figures seated on bench (subsellium) side by side; border of dots; corn-ears in left and right fields; AD·FRV·EMV EX·S·C"
 featured: false

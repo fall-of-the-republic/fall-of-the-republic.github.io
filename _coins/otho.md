@@ -12,9 +12,9 @@ metal: Silver
 weight: "3.32g"
 diameter: "18mm"
 grade: "Fine"
-image_obverse: coins/otho/otho-obverse.png
-image_reverse: coins/otho/otho-reverse.png
-image_aligned: coins/otho/otho-aligned.png
+image_obverse: coins/otho/otho-obverse.jpg
+image_reverse: coins/otho/otho-reverse.jpg
+image_aligned: coins/otho/otho-aligned.jpg
 obverse_description: "Bare head of Otho right; IMP M OTHO CAESAR AVG TR P"
 reverse_description: "Securitas, draped, standing left, holding wreath in right hand and sceptre in left; SECVRITAS P R"
 featured: false

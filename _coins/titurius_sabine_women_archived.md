@@ -12,9 +12,9 @@ metal: Silver
 weight: "3.81g"
 diameter: "18mm"
 grade: "Fine"
-image_obverse: coins/titurius_sabine_women_archived/titurius_sabine_women_archived-obv.png
-image_reverse: coins/titurius_sabine_women_archived/titurius_sabine_women_archived-rev.png
-image_aligned: coins/titurius_sabine_women_archived/titurius_sabine_women_archived-aligned.png
+image_obverse: coins/titurius_sabine_women_archived/titurius_sabine_women_archived-obv.jpg
+image_reverse: coins/titurius_sabine_women_archived/titurius_sabine_women_archived-rev.jpg
+image_aligned: coins/titurius_sabine_women_archived/titurius_sabine_women_archived-aligned.jpg
 obverse_description: "Bare head of king Tatius r.; SABIN behind and monogram TA before"
 reverse_description: "Two Roman soldiers each carrying away a Sabine women in their arms; L. TITURI in exergue."
 featured: false

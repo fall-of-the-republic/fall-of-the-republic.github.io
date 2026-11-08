@@ -12,9 +12,9 @@ metal: Silver
 weight: "3.46g"
 diameter: "18mm"
 grade: "Good Very Fine"
-image_obverse: coins/pius_aurelius/pius_aurelius-obv.png
-image_reverse: coins/pius_aurelius/pius_aurelius-rev.png
-image_aligned: coins/pius_aurelius/pius_aurelius-aligned.png
+image_obverse: coins/pius_aurelius/pius_aurelius-obv.jpg
+image_reverse: coins/pius_aurelius/pius_aurelius-rev.jpg
+image_aligned: coins/pius_aurelius/pius_aurelius-aligned.jpg
 obverse_description: "Laureate head of Antoninus Pius, right; ANTONINVS AVG PIVS PP TR P COS III"
 reverse_description: "Draped and bare head bust of Marcus Aurelius, right; AVRELIVS CAESAR AVG PII F COS"
 featured: false

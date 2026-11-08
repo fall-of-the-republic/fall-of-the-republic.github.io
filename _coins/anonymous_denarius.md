@@ -12,9 +12,9 @@ metal: Silver
 weight: "3.75g"
 diameter: "17.50mm"
 grade: "Very Fine"
-image_obverse: coins/anonymous_denarius/anonymous_denarius-obv.png
-image_reverse: coins/anonymous_denarius/anonymous_denarius-rev.png
-image_aligned: coins/anonymous_denarius/anonymous_denarius-aligned.png
+image_obverse: coins/anonymous_denarius/anonymous_denarius-obv.jpg
+image_reverse: coins/anonymous_denarius/anonymous_denarius-rev.jpg
+image_aligned: coins/anonymous_denarius/anonymous_denarius-aligned.jpg
 obverse_description: "Helmeted head of Roma, right; behind, X [mark of value]"
 reverse_description: "The Dioscuri galloping right, in three sided frame ROMA"
 featured: false

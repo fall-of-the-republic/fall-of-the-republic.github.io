@@ -11,9 +11,9 @@ metal: Silver
 weight: ""
 diameter: ""
 grade: "Very Fine"
-image_obverse: coins/mn_aquillius/mn_aquillius-obv.png
-image_reverse: coins/mn_aquillius/mn_aquillius-rev.png
-image_aligned: coins/mn_aquillius/mn_aquillius-aligned.png
+image_obverse: coins/mn_aquillius/mn_aquillius-obv.jpg
+image_reverse: coins/mn_aquillius/mn_aquillius-rev.jpg
+image_aligned: coins/mn_aquillius/mn_aquillius-aligned.jpg
 obverse_description: "Helmeted bust of Virtus, right, draped. Border of dots; VIRTVS IIIVIR"
 reverse_description: "Warrior, holding shield in left hand and raising up fallen figure with right hand. Border of dots; SICIL M͡N·AQVIL M͡N·F·M͡N·N"
 featured: false

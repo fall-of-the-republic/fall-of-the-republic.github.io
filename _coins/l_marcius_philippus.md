@@ -13,9 +13,9 @@ weight: "3.99g"
 diameter: "18mm"
 grade: "VF"
 provenance: "Inventory of Argentus Rare Coins; Ex: Dr. Busso Peus Nachf Auction 442 - Lot 282; Ex: Collection of Dr. M Erworben - Münzhandlung Ritter, Dussledorf"
-image_obverse: coins/l_marcius_philippus/l_marcius_philippus-obv.png
-image_reverse: coins/l_marcius_philippus/l_marcius_philippus-rev.png
-image_aligned: coins/l_marcius_philippus/l_marcius_philippus-aligned.png
+image_obverse: coins/l_marcius_philippus/l_marcius_philippus-obv.jpg
+image_reverse: coins/l_marcius_philippus/l_marcius_philippus-rev.jpg
+image_aligned: coins/l_marcius_philippus/l_marcius_philippus-aligned.jpg
 obverse_description: "Diademed head of Ancus Marcius, right; behind lituus and below ANCVS"
 reverse_description: "Equestrian statue of Q. Marcius Tremelus, standing on top of an aqueduct; at horse's feet, flower. Below, AQVA MAR within the arches of the aqueduct; Border of dots."
 featured: true

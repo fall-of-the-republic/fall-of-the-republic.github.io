@@ -12,9 +12,9 @@ metal: Silver
 weight: "4.25g"
 diameter: "17mm"
 grade: "VF"
-image_obverse: coins/sicinius_coponius/sicinius_coponius-obv.png
-image_reverse: coins/sicinius_coponius/sicinius_coponius-rev.png
-image_aligned: coins/sicinius_coponius/sicinius_coponius-aligned.png
+image_obverse: coins/sicinius_coponius/sicinius_coponius-obv.jpg
+image_reverse: coins/sicinius_coponius/sicinius_coponius-rev.jpg
+image_aligned: coins/sicinius_coponius/sicinius_coponius-aligned.jpg
 obverse_description: "Laureate head of Apollo right; Q•SICINIVS behind, III•VIR before"
 reverse_description: "Club of Hercules right, set with bow-case and quiver, wreath above; C•COPONIVS•PR•S•C around"
 featured: false

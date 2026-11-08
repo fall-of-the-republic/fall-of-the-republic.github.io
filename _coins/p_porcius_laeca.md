@@ -11,9 +11,9 @@ reference: '<a href="http://numismatics.org/crro/id/rrc-301.1">Crawford 301/1</a
 metal: Silver
 weight: "3.99g"
 grade: "Good Very Fine"
-image_obverse: coins/porcius-laeca/p-porcius-laeca-obv.png
-image_reverse: coins/porcius-laeca/p-porcius-laeca-rev.png
-image_aligned: coins/porcius-laeca/p-porcius-laeca-aligned.png
+image_obverse: coins/porcius-laeca/p-porcius-laeca-obv.jpg
+image_reverse: coins/porcius-laeca/p-porcius-laeca-rev.jpg
+image_aligned: coins/porcius-laeca/p-porcius-laeca-aligned.jpg
 obverse_description: "Helmeted head of Roma, right; above [ROMA]; behind [P. L]AECA; before X. Border of dots"
 reverse_description: "Provincial governor standing left with r. hand raised; on left citizen in toga gesturing with right hand; on right lictor with fasces; in exergue PROVOCO. Border of dots."
 featured: true

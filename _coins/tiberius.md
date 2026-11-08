@@ -12,9 +12,9 @@ metal: Silver
 weight: "3.81g"
 diameter: "18mm"
 grade: "Very Fine"
-image_obverse: coins/tiberius/tiberius-obv.png
-image_reverse: coins/tiberius/tiberius-rev.png
-image_aligned: coins/tiberius/tiberius-aligned.png
+image_obverse: coins/tiberius/tiberius-obv.jpg
+image_reverse: coins/tiberius/tiberius-rev.jpg
+image_aligned: coins/tiberius/tiberius-aligned.jpg
 obverse_description: "Laureate head of Tiberius right; TI CAESAR DIVI AVG F AVGVSTVS"
 reverse_description: "Livia (as Pax) seated right on throne, holding scepter and olive branch; PONTIF MAXIM"
 featured: false

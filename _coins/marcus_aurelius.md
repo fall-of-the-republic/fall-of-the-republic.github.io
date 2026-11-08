@@ -11,9 +11,9 @@ reference: '<a href="http://numismatics.org/ocre/id/ric.3.m_aur.159">RIC III 159
 metal: Silver
 weight: 2.99g
 grade: "Very Fine"
-image_obverse: coins/marcus_aurelius/marcus_aurelius-obv.png
-image_reverse: coins/marcus_aurelius/marcus_aurelius-rev.png
-image_aligned: coins/marcus_aurelius/marcus_aurelius-aligned.png
+image_obverse: coins/marcus_aurelius/marcus_aurelius-obv.jpg
+image_reverse: coins/marcus_aurelius/marcus_aurelius-rev.jpg
+image_aligned: coins/marcus_aurelius/marcus_aurelius-aligned.jpg
 obverse_description: "Laureate head of Marcus Aurelius to the right; M ANTONINVS AVG ARM PARTH MAX"
 reverse_description: "Pax standing left, holding branch and cornucopiae; TR P XX IMP IIII COS III below"
 featured: false

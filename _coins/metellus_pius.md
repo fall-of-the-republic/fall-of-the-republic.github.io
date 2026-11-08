@@ -14,7 +14,7 @@ diameter: "18mm"
 grade: "VF"
 image_obverse: coins/metellus_pius/metellus-pius-obv.jpg
 image_reverse: coins/metellus_pius/metellus-pius-rev.jpg
-image_aligned: coins/metellus_pius/metellus-pius-aligned.png
+image_aligned: coins/metellus_pius/metellus-pius-aligned.jpg
 obverse_description: "Diademed head of Pietas to right; stork standing right to right"
 reverse_description: "IMPER — Jug and lituus; all within laurel wreath"
 featured: false

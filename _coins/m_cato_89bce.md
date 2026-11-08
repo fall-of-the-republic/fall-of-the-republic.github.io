@@ -12,9 +12,9 @@ metal: Silver
 weight: ""
 diameter: ""
 grade: ""
-image_obverse: coins/m_cato_89bce/m_cato_89bce-obv.png
-image_reverse: coins/m_cato_89bce/m_cato_89bce-rev.png
-image_aligned: coins/m_cato_89bce/m_cato_89bce-aligned.png
+image_obverse: coins/m_cato_89bce/m_cato_89bce-obv.jpg
+image_reverse: coins/m_cato_89bce/m_cato_89bce-rev.jpg
+image_aligned: coins/m_cato_89bce/m_cato_89bce-aligned.jpg
 obverse_description: "Diademed head of Roma right; ROMA behind, M·CATO before"
 reverse_description: "Victory seated right, holding patera and palm branch; ST below seat, VICTRIX in exergue"
 featured: false

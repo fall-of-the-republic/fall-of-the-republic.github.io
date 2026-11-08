@@ -12,9 +12,9 @@ metal: Silver
 weight: "3.10g"
 diameter: "18mm"
 grade: "Very Fine"
-image_obverse: coins/titus/titus-obv.png
-image_reverse: coins/titus/titus-rev.png
-image_aligned: coins/titus/titus-aligned.png
+image_obverse: coins/titus/titus-obv.jpg
+image_reverse: coins/titus/titus-rev.jpg
+image_aligned: coins/titus/titus-aligned.jpg
 obverse_description: "Laureate head of Titus right; IMP TITUS CAES VESPASIAN AVG PM"
 reverse_description: "Filleted tripod surmounted by dolphin and two ravens; TR P IX IMP XV COS VIII PP"
 featured: false

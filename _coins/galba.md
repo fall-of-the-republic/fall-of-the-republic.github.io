@@ -14,7 +14,7 @@ diameter: "19mm"
 grade: "Near Very Fine"
 image_obverse: coins/galba/galba-obverse.png
 image_reverse: coins/galba/galba-reverse.png
-image_aligned: coins/galba/galba-aligned.png
+image_aligned: coins/galba/galba-aligned.jpg
 obverse_description: "Laureate and draped bust of Galba right; IMP SER GALBA CAESAR AVG"
 reverse_description: "Livia draped, standing left, holding patera in right and sceptre in left; DIVA AVGVSTA"
 featured: false

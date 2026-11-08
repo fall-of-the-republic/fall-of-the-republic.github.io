@@ -11,9 +11,9 @@ reference: '<a href="http://numismatics.org/crro/id/rrc-441.1">Crawford 441/1</a
 metal: Silver
 weight: "3.49g"
 grade: "About Extra Fine / Good Very Fine"
-image_obverse: coins/neria/neria-obv.png
-image_reverse: coins/neria/neria-rev.png
-image_aligned: coins/neria/neria-aligned.png
+image_obverse: coins/neria/neria-obv.jpg
+image_reverse: coins/neria/neria-rev.jpg
+image_aligned: coins/neria/neria-aligned.jpg
 obverse_description: "Bearded head of Saturn right, harpa at shoulder; NERI Q VRB before"
 reverse_description: "Legionary eagle between two manipole standards on left hastati and on right principes; L LENT on left, [C MARC] on right, COS in lower field"
 featured: true

@@ -11,9 +11,9 @@ reference: '<a href="https://numismatics.org/crro/id/rrc-367.5">Crawford 367/5</
 metal: Silver
 weight: "3.70g"
 grade: "Good Very Fine"
-image_obverse: coins/sulla/sulla-obv.png
-image_reverse: coins/sulla/sulla-rev.png
-image_aligned: coins/sulla/sulla-aligned.png
+image_obverse: coins/sulla/sulla-obv.jpg
+image_reverse: coins/sulla/sulla-rev.jpg
+image_aligned: coins/sulla/sulla-aligned.jpg
 obverse_description: "Helmeted head of Roma right; L MANLI PRO Q around"
 reverse_description: Triumphator in a quadriga right, holding reins and caduceus, crowned by Victory flying left ; L SVLLA IMP around
 featured: false

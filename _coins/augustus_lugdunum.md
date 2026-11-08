@@ -12,9 +12,9 @@ metal: Bronze
 weight: "4.97g"
 diameter: "21mm"
 grade: "Very Fine"
-image_obverse: coins/augustus_lugdunum/augustus_lugdunum-obv.png
-image_reverse: coins/augustus_lugdunum/augustus_lugdunum-rev.png
-image_aligned: coins/augustus_lugdunum/augustus_lugdunum-aligned.png
+image_obverse: coins/augustus_lugdunum/augustus_lugdunum-obv.jpg
+image_reverse: coins/augustus_lugdunum/augustus_lugdunum-rev.jpg
+image_aligned: coins/augustus_lugdunum/augustus_lugdunum-aligned.jpg
 obverse_description: "Laureate head of Augustus to right; CAESAR AVGVSTVS DIVI F PATER PATRIAE"
 reverse_description: "Front elevation of the Altar of Lugdunum, decorated with the corona civica between laurels, flanked by stylized male figures; ROM ET AVG above"
 featured: false

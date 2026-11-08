@@ -14,7 +14,7 @@ diameter:
 grade: "Near Very Fine"
 image_obverse: coins/nero/nero-obv.png
 image_reverse: coins/nero/nero-rev.png
-image_aligned: coins/nero/nero-aligned.png
+image_aligned: coins/nero/nero-aligned.jpg
 obverse_description: "Laureate head of Nero right"
 reverse_description: "Salus seated left on ornamented throne, holding patera and resting hand at side; SA - LUS to left and right"
 featured: false

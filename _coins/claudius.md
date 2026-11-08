@@ -12,9 +12,9 @@ metal: Bronze
 weight: "10.34g"
 diameter: "29mm"
 grade: "Near Very Fine"
-image_obverse: coins/claudius/claudius-obv.png
-image_reverse: coins/claudius/claudius-rev.png
-image_aligned: coins/claudius/claudius-aligned.png
+image_obverse: coins/claudius/claudius-obv.jpg
+image_reverse: coins/claudius/claudius-rev.jpg
+image_aligned: coins/claudius/claudius-aligned.jpg
 obverse_description: "Bare head of Claudius left; TI CLAVDIVS CAESAR AVG P M TR P IMP"
 reverse_description: "Minerva standing facing to right, hurling javelin and holding round shield; S-C"
 featured: false

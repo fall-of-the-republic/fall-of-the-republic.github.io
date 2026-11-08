@@ -62,7 +62,7 @@ The Temple of Castor and Pollux is at the heart of the Forum and the statue of T
 <div class="row mt-3 justify-content-center">
   <div class="col-md-6 text-center">
     <div class="d-inline-block">
-      {% include figure.liquid path="assets/img/coins/l_marcius_philippus/l_marcius_philippus-rev.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+      {% include figure.liquid path="assets/img/coins/l_marcius_philippus/l_marcius_philippus-rev.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
       <p class="text-center text-muted mt-2 mb-0"><small>Reverse of our denarius of L. Marcius Philippus</small></p>
     </div>
   </div>

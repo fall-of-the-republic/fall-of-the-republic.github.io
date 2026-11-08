@@ -12,9 +12,9 @@ metal: Silver
 weight: "3.85g"
 diameter: "18mm"
 grade: "VF"
-image_obverse: coins/licinius-nerva/p-licinius-nerva-obv.png
-image_reverse: coins/licinius-nerva/p-licinius-nerva-rev.png
-image_aligned: coins/licinius-nerva/p-licinius-nerva-aligned.png
+image_obverse: coins/licinius-nerva/p-licinius-nerva-obv.jpg
+image_reverse: coins/licinius-nerva/p-licinius-nerva-rev.jpg
+image_aligned: coins/licinius-nerva/p-licinius-nerva-aligned.jpg
 obverse_description: "Helmeted head of Rome left, holding in left shield inscribed with horseman galloping, spear in right over shoulder; star before; crescent moon above; ROMA behind"
 reverse_description: "A voting scene in the Commitum; Walking across the pons, on the left a voter receives a ballot from the rogator below; to the right another voter places his ballot in the cista; [Above a tablet with P sits on a tribunes chair;] below P NERVA"
 featured: true

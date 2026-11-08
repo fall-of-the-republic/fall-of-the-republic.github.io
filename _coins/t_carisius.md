@@ -11,9 +11,9 @@ metal: Silver
 weight: ""
 diameter: ""
 grade: "Near Very Fine"
-image_obverse: coins/t_carisius/obv.png
-image_reverse: coins/t_carisius/rev.png
-image_aligned: coins/t_carisius/aligned.png
+image_obverse: coins/t_carisius/obv.jpg
+image_reverse: coins/t_carisius/rev.jpg
+image_aligned: coins/t_carisius/aligned.jpg
 obverse_description: "Head of Juno Moneta right; border of dots; MONETA"
 reverse_description: "Anvil die with garlanded punch die above; on left, tongs; on right, hammer; T·CARISIVS; laurel-wreath border"
 featured: false

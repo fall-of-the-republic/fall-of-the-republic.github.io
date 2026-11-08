@@ -11,9 +11,9 @@ metal: Silver
 weight: ""
 diameter: "19mm"
 grade: ""
-image_obverse: coins/faustus_sulla_signet/obverse.png
-image_reverse: coins/faustus_sulla_signet/reverse.png
-image_aligned: coins/faustus_sulla_signet/aligned.png
+image_obverse: coins/faustus_sulla_signet/obverse.jpg
+image_reverse: coins/faustus_sulla_signet/reverse.jpg
+image_aligned: coins/faustus_sulla_signet/aligned.jpg
 obverse_description: "Bust of Venus, right, draped, laureate and wearing diadem; S·C legend; sceptre behind"
 reverse_description: "Three trophies; on left, jug; on right, lituus; monogram (FAVSTVS) in exergue"
 featured: false

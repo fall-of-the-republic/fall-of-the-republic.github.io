@@ -12,9 +12,9 @@ metal: Silver
 weight: "3.31g"
 diameter: "18mm"
 grade: "Fine"
-image_obverse: coins/nerva/nerva-obv.png
-image_reverse: coins/nerva/nerva-rev.png
-image_aligned: coins/nerva/nerva-aligned.png
+image_obverse: coins/nerva/nerva-obv.jpg
+image_reverse: coins/nerva/nerva-rev.jpg
+image_aligned: coins/nerva/nerva-aligned.jpg
 obverse_description: Laureate head of Nerva right; IMP NERVA CAES AVG P M TR P COS II P P
 reverse_description: Fortuna seated left, holding grain ears and sceptre; FORTVNA P R
 featured: false

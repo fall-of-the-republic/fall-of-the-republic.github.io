@@ -11,9 +11,9 @@ reference: '<a href="http://numismatics.org/crro/id/rrc-317.3">Crawford 317/3b</
 metal: Silver
 weight: "3.88g"
 grade: "Very Fine"
-image_obverse: coins/saturnius/saturnius-obverse.png
-image_reverse: coins/saturnius/saturnius-reverse.png
-image_aligned: coins/saturnius/saturnius-aligned.png
+image_obverse: coins/saturnius/saturnius-obverse.jpg
+image_reverse: coins/saturnius/saturnius-reverse.jpg
+image_aligned: coins/saturnius/saturnius-aligned.jpg
 obverse_description: "Helmeted head of Roma left"
 reverse_description: "Saturn driving quadriga right, holding reins in left and harpa in right; control mark P below; L SATVRN in exerge"
 featured: false

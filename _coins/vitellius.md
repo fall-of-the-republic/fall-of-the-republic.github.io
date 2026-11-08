@@ -12,9 +12,9 @@ metal: Silver
 weight: "3.08g"
 diameter: "18mm"
 grade: "Fine"
-image_obverse: coins/vitellius/vitellius-obv.png
-image_reverse: coins/vitellius/vitellius-rev.png
-image_aligned: coins/vitellius/vitellius-aligned.png
+image_obverse: coins/vitellius/vitellius-obv.jpg
+image_reverse: coins/vitellius/vitellius-rev.jpg
+image_aligned: coins/vitellius/vitellius-aligned.jpg
 obverse_description: "A VITELLIVS GERM IMP AVG TR P; Laureate head of Vitellius right"
 reverse_description: "CONCORDIA P R; Concordia seated left on throne, holding patera and cornucopia"
 featured: false

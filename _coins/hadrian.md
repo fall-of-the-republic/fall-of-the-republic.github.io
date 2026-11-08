@@ -14,7 +14,7 @@ diameter:
 grade: "Very Fine"
 image_obverse: coins/hadrian/hadrian-obv.png
 image_reverse: coins/hadrian/hadrian-rev.png
-image_aligned: coins/hadrian/hadrian-aligned.png
+image_aligned: coins/hadrian/hadrian-aligned.jpg
 obverse_description: "Laureate head right of Hadrian; HADRIANVS AVG COS III PP"
 reverse_description: "Felicitas standing left, holding branch and cornucopia; FELICITAS PR"
 featured: false

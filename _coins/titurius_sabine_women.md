@@ -12,9 +12,9 @@ metal: Silver
 weight: "3.94g"
 diameter: "19mm"
 grade: "VF+"
-image_obverse: coins/titurius_sabine_women/titurius_sabine_women-obv.png
-image_reverse: coins/titurius_sabine_women/titurius_sabine_women-rev.png
-image_aligned: coins/titurius_sabine_women/titurius_sabine_women-aligned.png
+image_obverse: coins/titurius_sabine_women/titurius_sabine_women-obv.jpg
+image_reverse: coins/titurius_sabine_women/titurius_sabine_women-rev.jpg
+image_aligned: coins/titurius_sabine_women/titurius_sabine_women-aligned.jpg
 obverse_description: "Bareheaded, bearded head of King Tatius right; SABIN downward to left, TA monogram to right"
 reverse_description: "Abduction of the Sabine Women: two soldiers, facing each other, each carrying off a Sabine woman in his arms; L TITVRI in exergue"
 featured: true

@@ -16,7 +16,7 @@ image_reverse: coins/sulla/sulla-rev.jpg
 image_aligned: coins/sulla/sulla-aligned.jpg
 obverse_description: "Helmeted head of Roma right; L MANLI PRO Q around"
 reverse_description: Triumphator in a quadriga right, holding reins and caduceus, crowned by Victory flying left ; L SVLLA IMP around
-featured: false
+featured: true
 ---
 
 In a departure from our Imperial coinage to date, we have a Republican coin showing a triumphant Roman general parading in a four-horse chariot, being crowned by Victory celebrating his conquests against the enemies of Rome. However, this coin is a perversion of that traditional narrative. Having been snubbed by a political enemy for a military command, Sulla turned his armies on Rome, killed his fellow Romans, and declared himself Dictator in 82 BC.

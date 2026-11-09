@@ -12,12 +12,10 @@ metal: Silver
 weight: "4.14g"
 diameter: "19mm"
 grade: "VF"
-image_obverse: coins/m_porcius_cato/cato-obv.png
-image_reverse: coins/m_porcius_cato/cato-rev.png
+image_obverse: coins/m_porcius_cato/cato-obv.jpg
+image_reverse: coins/m_porcius_cato/cato-rev.jpg
 image_aligned: coins/m_porcius_cato/cato-aligned.jpg
 obverse_description: "Draped busted of female (Roma? or Libertas?) right with hair collected in knot; ROMA behind; M CATO PRO PR before"
 reverse_description: "Victory seated right holding wreath in right hand; VICTRIX (TR ligatured) in exergue below; border of dots"
 featured: false
 ---
-
-Photos copyright Classical Numismatics Group.

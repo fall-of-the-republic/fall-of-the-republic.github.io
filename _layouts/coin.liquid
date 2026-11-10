@@ -218,7 +218,7 @@ layout: default
 
 .coin-images {
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 400px));
+  grid-template-columns: repeat(2, minmax(0, 400px));
   gap: 2rem;
   justify-content: center;
   margin: 2rem 0;
@@ -227,8 +227,14 @@ layout: default
 .coin-image-main,
 .coin-image-reverse {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 1fr;
   align-items: start;
+  min-width: 0;
+}
+
+.coin-image-main figure,
+.coin-image-reverse figure {
+  margin: 0;
 }
 
 .coin-image-main img,
@@ -370,8 +376,8 @@ layout: default
 
 @media (max-width: 768px) {
   .coin-images {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: minmax(0, 400px);
+    gap: 1.5rem;
   }
   
   .coin-details dl {

@@ -42,7 +42,7 @@ layout: default
                 {% assign obv_alt = hcoin.title | append: " - Obverse" %}
                 {% assign obv_path = "assets/img/" | append: hcoin.image_obverse %}
                 {% include figure.liquid path=obv_path alt=obv_alt zoomable=true %}
-                <p class="image-label">Obverse{% if hcoin.obverse_description %}: {{ hcoin.obverse_description }}{% endif %}</p>
+                <p class="image-label">Obverse{% if hcoin.obverse_description != blank %}: {{ hcoin.obverse_description }}{% endif %}</p>
               </div>
             {% endif %}
             {% if hcoin.image_reverse %}
@@ -50,14 +50,14 @@ layout: default
                 {% assign rev_alt = hcoin.title | append: " - Reverse" %}
                 {% assign rev_path = "assets/img/" | append: hcoin.image_reverse %}
                 {% include figure.liquid path=rev_path alt=rev_alt zoomable=true %}
-                <p class="image-label">Reverse{% if hcoin.reverse_description %}: {{ hcoin.reverse_description }}{% endif %}</p>
+                <p class="image-label">Reverse{% if hcoin.reverse_description != blank %}: {{ hcoin.reverse_description }}{% endif %}</p>
               </div>
             {% endif %}
           </div>
           <p class="post-coin-caption">
             <a href="{{ hcoin.url | relative_url }}">{{ hcoin.title }}</a>
-            {% if hcoin.date_minted %}&middot; {{ hcoin.date_minted }}{% endif %}
-            {% if hcoin.reference %}&middot; {{ hcoin.reference }}{% endif %}
+            {% if hcoin.date_minted != blank %}&middot; {{ hcoin.date_minted }}{% endif %}
+            {% if hcoin.reference != blank %}&middot; {{ hcoin.reference }}{% endif %}
           </p>
         </div>
       {% endif %}

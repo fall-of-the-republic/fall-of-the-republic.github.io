@@ -15,7 +15,7 @@ grade: ""
 image_obverse: coins/p_satrienus/p_satrienus-obv.jpg
 image_reverse: coins/p_satrienus/p_satrienus-rev.jpg
 image_aligned: coins/p_satrienus/p_satrienus-aligned.jpg
-obverse_description: "Helmeted head of Roma right; LXXXXV behind"
+obverse_description: "Helmeted head of Mars right; LXXXXV behind"
 reverse_description: "She-wolf walking left; ROMA above, P·SATRIENVS in exergue"
 featured: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: "Denarius of M. Porcius Cato"
-period: Republican
+period: Archive
 issuer: M. Porcius Cato
 mint: Rome
 denomination: Denarius

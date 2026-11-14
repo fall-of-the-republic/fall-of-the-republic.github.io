@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://fall-of-the-republic.github.io/sitemap.xml

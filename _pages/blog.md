@@ -34,9 +34,11 @@ nav_order: 3
       <div class="blog-roll-coins">
         {% for slug in post.coins limit: 3 %}
           {% assign coin = site.coins | where: "slug", slug | first %}
-          {% if coin and coin.image_obverse %}
+          {% assign thumb = coin.image_obverse %}
+          {% if post.coin_side == "reverse" and coin.image_reverse %}{% assign thumb = coin.image_reverse %}{% endif %}
+          {% if coin and thumb %}
             <a href="{{ coin.url | relative_url }}" title="{{ coin.title }}">
-              <img src="{{ coin.image_obverse | prepend: '/assets/img/' | relative_url }}" alt="{{ coin.title }}" loading="lazy">
+              <img src="{{ thumb | prepend: '/assets/img/' | relative_url }}" alt="{{ coin.title }}" loading="lazy">
             </a>
           {% endif %}
         {% endfor %}

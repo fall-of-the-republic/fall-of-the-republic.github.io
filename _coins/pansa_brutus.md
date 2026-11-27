@@ -7,7 +7,7 @@ mint: Rome
 denomination: Denarius
 date_minted: "48 BCE"
 sort_date: -48
-reference: '<a href="https://numismatics.org/crro/id/rrc-451.1" target="_blank">Crawford 451/1</a>'
+reference: '<a href="https://numismatics.org/crro/id/rrc-451.1">Crawford 451/1</a>'
 metal: Silver
 weight: "3.62g"
 grade: "VF"

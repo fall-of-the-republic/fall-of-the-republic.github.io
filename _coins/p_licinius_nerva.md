@@ -7,7 +7,7 @@ mint: Rome
 denomination: Denarius
 date_minted: "113 - 112 BCE"
 sort_date: -113
-reference: '<a href="http://numismatics.org/crro/id/rrc-292.1">Crawford 292/1</a>; BMCRR Rome 526; RBW 1125'
+reference: '<a href="https://numismatics.org/crro/id/rrc-292.1">Crawford 292/1</a>; BMCRR Rome 526; RBW 1125'
 metal: Silver
 weight: "3.85g"
 diameter: "18mm"

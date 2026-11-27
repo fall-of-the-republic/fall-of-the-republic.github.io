@@ -6,7 +6,7 @@ issuer: Q. Sicinnius
 mint: Rome
 denomination: Denarius
 date_minted: "49 BC"
-reference: '<a href="https://numismatics.org/crro/id/rrc-440.1">Crawford 440/1</a>; BMCRR 3947; RBW 1555; CRI 1;'
+reference: '<a href="https://numismatics.org/crro/id/rrc-440.1">Crawford 440/1</a>; BMCRR Rome 3947; RBW 1555; CRI 1'
 metal: Silver
 weight: "3.54g"
 grade: "VF"

@@ -7,7 +7,7 @@ mint: Rome
 denomination: Denarius
 date_minted: "110-109 BCE"
 sort_date: -110
-reference: '<a href="http://numismatics.org/crro/id/rrc-301.1">Crawford 301/1</a>'
+reference: '<a href="https://numismatics.org/crro/id/rrc-301.1">Crawford 301/1</a>'
 metal: Silver
 weight: "3.99g"
 grade: "Good Very Fine"

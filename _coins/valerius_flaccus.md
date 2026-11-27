@@ -7,7 +7,7 @@ mint: Rome
 denomination: Denarius
 date_minted: "108 - 107 BCE"
 sort_date: -108
-reference: '<a href="http://numismatics.org/crro/id/rrc-306.1">Crawford 306/1</a>'
+reference: '<a href="https://numismatics.org/crro/id/rrc-306.1">Crawford 306/1</a>'
 metal: Silver
 weight: "3.79g"
 grade: "Choice XF (formerly NGC-certified, cert. 8231555-009)"

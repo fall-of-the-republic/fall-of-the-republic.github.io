@@ -7,7 +7,7 @@ mint: "Rome"
 denomination: Denarius
 date_minted: "early January 49 BCE"
 sort_date: -49
-reference: '<a href="http://numismatics.org/crro/id/rrc-441.1">Crawford 441/1</a>'
+reference: '<a href="https://numismatics.org/crro/id/rrc-441.1">Crawford 441/1</a>'
 metal: Silver
 weight: "3.49g"
 grade: "About Extra Fine / Good Very Fine"

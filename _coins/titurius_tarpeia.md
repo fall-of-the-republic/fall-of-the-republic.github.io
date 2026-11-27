@@ -7,7 +7,7 @@ mint: Rome
 denomination: Denarius
 date_minted: "89 BCE"
 sort_date: -89
-reference: '<a href="http://numismatics.org/crro/id/rrc-344.2b">Crawford 344/2b</a>'
+reference: '<a href="https://numismatics.org/crro/id/rrc-344.2b">Crawford 344/2b</a>'
 metal: Silver
 weight: "3.92g"
 grade: "Very Fine"

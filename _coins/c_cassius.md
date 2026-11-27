@@ -7,7 +7,7 @@ mint: Rome
 denomination: Denarius
 date_minted: "126 BCE"
 sort_date: -126
-reference: '<a href="http://numismatics.org/crro/id/rrc-266.1">Crawford 266/1</a>'
+reference: '<a href="https://numismatics.org/crro/id/rrc-266.1">Crawford 266/1</a>'
 metal: Silver
 grade: "Very Fine"
 image_obverse: coins/c_cassius/c_cassius-obv.jpg

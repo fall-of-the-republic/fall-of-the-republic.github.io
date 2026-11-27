@@ -7,7 +7,7 @@ mint: Rome
 denomination: Denarius
 date_minted: "55 BCE"
 sort_date: -55.1
-reference: '<a href="http://numismatics.org/crro/id/rrc-428.3">Crawford 428/3</a>'
+reference: '<a href="https://numismatics.org/crro/id/rrc-428.3">Crawford 428/3</a>'
 metal: Silver
 weight: "3.82g"
 diameter: "20mm"

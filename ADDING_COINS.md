@@ -131,7 +131,7 @@ mint: Rome
 denomination: Denarius
 date_minted: "Jan/Feb 44 BCE"
 sort_date: -44               # Numeric year (negative for BC/BCE). Use decimals for coins in same year: 69.1, 69.2, 69.3
-reference: '<a href="http://numismatics.org/crro/id/rrc-480.5">Crawford 480/5b</a>'  # Link for Republican coins
+reference: '<a href="https://numismatics.org/crro/id/rrc-480.5">Crawford 480/5b</a>'  # Link for Republican coins
 metal: Silver
 weight: "3.80g"
 diameter: "19mm"
@@ -166,9 +166,9 @@ You can use markdown formatting like **bold** and *italic* for emphasis.
 
 ### Reference Links
 
-**For Republican & Imperatorial coins** (CRRO database link on Crawford number only):
+**For Republican & Imperatorial coins** (always `Crawford`, never `RRC`; ANS/CRRO `https` link on the Crawford number only). Order: Crawford; BMCRR `<Region> <number>`; RBW; then other catalogues (e.g. CRI). Separate with `; ` and no trailing semicolon:
 ```yaml
-reference: '<a href="http://numismatics.org/crro/id/rrc-317.3">Crawford 317/3b</a>; BMCRR Rome 1548; RBW 1170'
+reference: '<a href="https://numismatics.org/crro/id/rrc-317.3">Crawford 317/3b</a>; BMCRR Rome 1548; RBW 1170'
 ```
 
 **For Imperial coins** (plain text, no links):
@@ -262,6 +262,6 @@ Use these for same-year coins (fractional sort_date):
 - Restart Jekyll or rebuild with `docker compose up`
 
 ### Reference links not working
-- For Republican: `http://numismatics.org/crro/id/rrc-317.3` (URL-encoded, match the RRC number)
+- For Republican: `https://numismatics.org/crro/id/rrc-317.3` (URL-encoded, match the RRC number)
 - For Imperial: RIC references typically don't have URLs, use plain text
 - Always wrap in `<a href="...">text</a>` tags

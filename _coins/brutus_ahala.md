@@ -7,7 +7,7 @@ mint: Rome
 denomination: Denarius
 date_minted: "54 BCE"
 sort_date: -54
-reference: '<a href="http://numismatics.org/crro/id/rrc-433.2">Crawford 433/2</a>, BMCRR 3864'
+reference: '<a href="https://numismatics.org/crro/id/rrc-433.2">Crawford 433/2</a>; BMCRR Rome 3864'
 metal: Silver
 weight: "3.70g"
 grade: "Very Fine"

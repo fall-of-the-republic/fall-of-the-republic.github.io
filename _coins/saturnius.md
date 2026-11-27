@@ -7,7 +7,7 @@ mint: Rome
 denomination: Denarius
 date_minted: "101 BC"
 sort_date: -101
-reference: '<a href="http://numismatics.org/crro/id/rrc-317.3">Crawford 317/3b</a>; BMCRR Rome 1548; RBW 1170'
+reference: '<a href="https://numismatics.org/crro/id/rrc-317.3">Crawford 317/3b</a>; BMCRR Rome 1548; RBW 1170'
 metal: Silver
 weight: "3.88g"
 grade: "Very Fine"

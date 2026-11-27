@@ -47,9 +47,9 @@ This document is for reminding you (as an AI assistant) about the current best p
 ### Reference Links
 **Republican & Imperatorial coins:**
 ```html
-<a href="http://numismatics.org/crro/id/rrc-317.3">Crawford 317/3b</a>; BMCRR Rome 1548
+<a href="https://numismatics.org/crro/id/rrc-317.3">Crawford 317/3b</a>; BMCRR Rome 1548; RBW 1170
 ```
-Only the Crawford number gets the href link.
+Always write `Crawford` (never `RRC`). Only the Crawford number gets the `https` href link. Order: Crawford; BMCRR `<Region> <number>`; RBW; other catalogues (e.g. CRI). Separate with `; `, no trailing semicolon.
 
 **Imperial coins:**
 ```html

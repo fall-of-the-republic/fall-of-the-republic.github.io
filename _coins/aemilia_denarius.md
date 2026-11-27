@@ -7,7 +7,7 @@ mint: Rome
 denomination: Denarius
 date_minted: "62 BCE"
 sort_date: -62
-reference: '<a href="http://numismatics.org/crro/id/rrc-415.1">Crawford 415/1</a>'
+reference: '<a href="https://numismatics.org/crro/id/rrc-415.1">Crawford 415/1</a>'
 metal: Silver
 weight: "3.67g"
 grade: "Very Fine"

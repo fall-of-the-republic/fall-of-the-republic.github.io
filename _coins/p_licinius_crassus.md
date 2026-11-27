@@ -7,7 +7,7 @@ mint: Rome
 denomination: Denarius
 date_minted: "55 BCE"
 sort_date: -55.3
-reference: '<a href="http://numismatics.org/crro/id/rrc-430.1">Crawford 430/1</a>; RBW 1539;'
+reference: '<a href="https://numismatics.org/crro/id/rrc-430.1">Crawford 430/1</a>; RBW 1539'
 metal: Silver
 weight: "3.92g"
 diameter: "18mm"

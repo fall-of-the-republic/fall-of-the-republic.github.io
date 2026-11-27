@@ -6,7 +6,7 @@ issuer: "Q. Servilius Caepio and L. Calpurnius Piso Caesoninus"
 mint: Rome
 denomination: Denarius
 date_minted: "100 BC"
-reference: '<a href="https://numismatics.org/crro/id/rrc-330.1">RRC 330/1</a>'
+reference: '<a href="https://numismatics.org/crro/id/rrc-330.1">Crawford 330/1</a>'
 metal: Silver
 weight: ""
 diameter: ""

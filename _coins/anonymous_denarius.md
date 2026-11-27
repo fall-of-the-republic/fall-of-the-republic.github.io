@@ -7,7 +7,7 @@ mint: Rome
 denomination: Denarius
 date_minted: "208 BCE / 189-180 BCE"
 sort_date: -208
-reference: '<a href="http://numismatics.org/crro/id/rrc-53.2">Crawford 53/2</a> or <a href="http://numismatics.org/crro/id/rrc-139.1">Crawford 139/1</a>'
+reference: '<a href="https://numismatics.org/crro/id/rrc-53.2">Crawford 53/2</a> or <a href="https://numismatics.org/crro/id/rrc-139.1">Crawford 139/1</a>'
 metal: Silver
 weight: "3.75g"
 diameter: "17.50mm"

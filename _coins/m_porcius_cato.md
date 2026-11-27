@@ -7,7 +7,7 @@ mint: Utica
 denomination: Denarius
 date_minted: "Spring 47 - Spring 46 BCE"
 sort_date: -46.5
-reference: '<a href="https://numismatics.org/crro/id/rrc-462.1b" target="_blank">Crawford 462/1b</a>; CRI 46b; BMCRR Africa 18'
+reference: '<a href="https://numismatics.org/crro/id/rrc-462.1b">Crawford 462/1b</a>; BMCRR Africa 18; CRI 46b'
 metal: Silver
 weight: "4.14g"
 diameter: "19mm"

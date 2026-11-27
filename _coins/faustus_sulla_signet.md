@@ -6,7 +6,7 @@ issuer: '<a href="https://romanrepublic.ac.uk/person/2300/">Faustus Cornelius Su
 mint: Rome
 denomination: Denarius
 date_minted: "56 BCE"
-reference: '<a href="https://numismatics.org/crro/id/rrc-426.3">RRC 426/3</a>'
+reference: '<a href="https://numismatics.org/crro/id/rrc-426.3">Crawford 426/3</a>'
 metal: Silver
 weight: ""
 diameter: "19mm"

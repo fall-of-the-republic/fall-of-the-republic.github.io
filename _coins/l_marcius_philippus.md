@@ -7,7 +7,7 @@ mint: Rome
 denomination: Denarius
 date_minted: "56 BCE"
 sort_date: -56
-reference: '<a href="https://numismatics.org/crro/id/rrc-425.1">Crawford 425/1</a>; RBW 1524; BMCRR Rome 3890'
+reference: '<a href="https://numismatics.org/crro/id/rrc-425.1">Crawford 425/1</a>; BMCRR Rome 3890; RBW 1524'
 metal: Silver
 weight: "3.99g"
 diameter: "18mm"

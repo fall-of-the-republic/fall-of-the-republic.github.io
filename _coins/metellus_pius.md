@@ -7,7 +7,7 @@ mint: "Military mint traveling with Sulla's army in northern Italy"
 denomination: Denarius
 date_minted: "81 BCE"
 sort_date: -81
-reference: "Crawford 374/2"
+reference: '<a href="https://numismatics.org/crro/id/rrc-374.2">Crawford 374/2</a>'
 metal: Silver
 weight: "3.54g"
 diameter: "18mm"
